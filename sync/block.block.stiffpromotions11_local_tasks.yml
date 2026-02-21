@@ -1,0 +1,22 @@
+uuid: 02a70d37-668f-4aa8-b136-dd87d997795d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - stiffpromotions11
+_core:
+  default_config_hash: bX3XOiBqEo9EqLqyctXZztd7IlZgeL0g7GBA2fdZudY
+id: stiffpromotions11_local_tasks
+theme: stiffpromotions11
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

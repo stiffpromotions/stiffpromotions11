@@ -1,0 +1,22 @@
+uuid: d41731d1-30f2-42dd-9a7d-d8a00915d2ce
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - stiffpromotions11
+_core:
+  default_config_hash: EgrzzULT_Rf8xoKb8_tjFjOKb1KLaEmSkRPMqfc4pX8
+id: stiffpromotions11_help
+theme: stiffpromotions11
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

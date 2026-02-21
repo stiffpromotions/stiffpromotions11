@@ -1,0 +1,22 @@
+uuid: b5f81bea-11c3-4f39-b21e-f31909e6255d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - stiffpromotions11
+_core:
+  default_config_hash: nw5-rtQR5SNxOTVRdxrxz5HhQbVtoo_ADmikhmdwkN0
+id: stiffpromotions11_content
+theme: stiffpromotions11
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

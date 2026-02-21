@@ -1,0 +1,25 @@
+uuid: 3943d093-e239-4eb5-aee5-da96e0822b68
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - stiffpromotions11
+_core:
+  default_config_hash: QIQhwU1_J7jryb-hPD0Iih2fWlQpqWC1FNBPeUXcfnI
+id: stiffpromotions11_branding
+theme: stiffpromotions11
+region: nav_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

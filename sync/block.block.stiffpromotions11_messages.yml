@@ -1,0 +1,22 @@
+uuid: 737c8f20-2268-4aa9-b092-0f2192994bf0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - stiffpromotions11
+_core:
+  default_config_hash: Ow8584hcxyMB-nVDElWIwD-jvJ2G2CpietDKqAWe-w0
+id: stiffpromotions11_messages
+theme: stiffpromotions11
+region: content
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

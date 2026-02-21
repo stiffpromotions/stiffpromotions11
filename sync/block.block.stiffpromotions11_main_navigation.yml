@@ -1,0 +1,27 @@
+uuid: 658923f8-19ff-4ba6-bf49-8e5720e799a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - stiffpromotions11
+_core:
+  default_config_hash: kenHBdQph00TbKRSGy9Jxn7DC0uf6le1ithFOs39Gl8
+id: stiffpromotions11_main_navigation
+theme: stiffpromotions11
+region: nav_main
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

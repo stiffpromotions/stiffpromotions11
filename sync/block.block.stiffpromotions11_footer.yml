@@ -1,0 +1,27 @@
+uuid: 278165db-609b-4167-8ad5-82720dbb4583
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - stiffpromotions11
+_core:
+  default_config_hash: fayjm10_FIpijz2zjDeJ7Wm3nMIfJC3ea7-4eFqvkFc
+id: stiffpromotions11_footer
+theme: stiffpromotions11
+region: footer
+weight: -6
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Footer
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

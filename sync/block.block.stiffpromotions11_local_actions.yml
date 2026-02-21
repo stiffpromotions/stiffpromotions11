@@ -1,0 +1,20 @@
+uuid: 7b601e63-2c4d-4d89-99ad-c4d713a932db
+langcode: en
+status: true
+dependencies:
+  theme:
+    - stiffpromotions11
+_core:
+  default_config_hash: eSqYd2PuX8c6YXK0WnzQkH0rr_gaehDyKyamZxuvHao
+id: stiffpromotions11_local_actions
+theme: stiffpromotions11
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }
