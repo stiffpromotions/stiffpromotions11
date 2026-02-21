@@ -1,0 +1,14 @@
+nav.navbar {
+  padding: 15px 0;
+}
+
+
+/* Secondary navigation */
+#block-stiffpromotions11-account-menu {
+  ul a {
+    color: $white;
+    &:hover {
+      color: $orange;
+    }
+  }
+}
