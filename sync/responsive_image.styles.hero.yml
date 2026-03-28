@@ -1,0 +1,25 @@
+uuid: 520afbf4-2e55-49d4-b641-8167cba33876
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - image.style.hero_desktop
+    - image.style.hero_mobile
+    - image.style.hero_tablet
+  theme:
+    - stiffpromotions11
+id: hero
+label: Hero
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: hero_desktop
+    breakpoint_id: stiffpromotions11.screen.lg-min
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: hero_tablet
+    breakpoint_id: stiffpromotions11.screen.sm-min
+    multiplier: 1x
+breakpoint_group: stiffpromotions11.screen
+fallback_image_style: hero_mobile

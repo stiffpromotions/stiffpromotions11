@@ -1,0 +1,10 @@
+uuid: e112a070-516f-4c8c-ae58-f0ffbfbc093a
+langcode: en-gb
+status: true
+dependencies: {  }
+id: front_page_block
+label: 'Front page block'
+icon_uuid: null
+icon_default: null
+description: '<em>Front page blocks</em> typically appear on the home page and have a hero image, title, copy and a call to action.'
+behavior_plugins: {  }

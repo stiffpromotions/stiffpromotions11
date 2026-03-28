@@ -1,0 +1,25 @@
+uuid: 0618f5a5-c595-48f8-af00-c837c1a3f386
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - system.menu.social-icons
+  module:
+    - system
+  theme:
+    - stiffpromotions11
+id: stiffpromotions11_socialicons
+theme: stiffpromotions11
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:social-icons'
+settings:
+  id: 'system_menu_block:social-icons'
+  label: 'Social icons'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility: {  }

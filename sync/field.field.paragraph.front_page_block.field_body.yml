@@ -1,0 +1,22 @@
+uuid: 7b708d95-d1f4-4f1d-837c-5352d05ee316
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.front_page_block
+  module:
+    - text
+id: paragraph.front_page_block.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: front_page_block
+label: Body
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

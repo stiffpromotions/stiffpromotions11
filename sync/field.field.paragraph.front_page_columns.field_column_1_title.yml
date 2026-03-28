@@ -1,0 +1,19 @@
+uuid: d237fb28-094b-462a-a6ef-a825924a54e5
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_column_1_title
+    - paragraphs.paragraphs_type.front_page_columns
+id: paragraph.front_page_columns.field_column_1_title
+field_name: field_column_1_title
+entity_type: paragraph
+bundle: front_page_columns
+label: 'Column 1 title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

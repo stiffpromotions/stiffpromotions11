@@ -1,0 +1,35 @@
+.btn {
+  display: inline-block;
+  font-family: $font-family-sans-serif;
+  font-weight: $font-weight-bold;
+  line-height: 1;
+  text-transform: uppercase;
+  background-color: $blue;
+  border: 0px;
+  color: $white;
+  padding: 12px 16px;
+  border-radius: $border-radius-img;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    // background-color: #0D285B;
+    background-color: lighten($blue, 20%);
+    color: $white;
+  }
+
+  &:active {
+    // background-color: #0D1A33;
+    background-color: lighten($blue, 30%);
+    color: $white;
+  }
+}
+
+
+#block-stiffpromotions11-main-navigation {
+  .btn {
+    font-family: "Alpha Medium", sans-serif;
+    font-weight: inherit;
+    font-size: 28px;
+    padding: 15px 20px 10px 20px !important; // Uneven padding accounts for unusual baseline positioning of Alpha font
+  }
+}

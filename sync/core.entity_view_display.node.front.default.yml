@@ -1,0 +1,59 @@
+uuid: eb492f23-5913-4686-b98d-9595e5013ea1
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.node.front.field_content
+    - field.field.node.front.field_image
+    - field.field.node.front.field_page_title_first_part
+    - field.field.node.front.field_page_title_second_part
+    - node.type.front
+  module:
+    - entity_reference_revisions
+    - user
+id: node.front.default
+targetEntityType: node
+bundle: front
+mode: default
+content:
+  field_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: hero
+      link: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_page_title_first_part:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_page_title_second_part:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

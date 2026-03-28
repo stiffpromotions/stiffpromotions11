@@ -1,0 +1,22 @@
+uuid: 6a62d477-2b0f-4eda-8ef6-35a15a9cdea0
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_column_2_text
+    - paragraphs.paragraphs_type.front_page_columns
+  module:
+    - text
+id: paragraph.front_page_columns.field_column_2_text
+field_name: field_column_2_text
+entity_type: paragraph
+bundle: front_page_columns
+label: 'Column 2 text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

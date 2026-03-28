@@ -1,0 +1,17 @@
+uuid: c8e08a53-b548-4fc5-8d0b-fdb95cf61a85
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Front
+type: front
+description: 'A special content page to help build the home page of the website.'
+help: null
+new_revision: true
+preview_mode: 0
+display_submitted: false

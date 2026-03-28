@@ -1,0 +1,19 @@
+uuid: ea54bbbd-7ed2-426c-b298-ce970d1c3694
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.front_page_block
+id: paragraph.front_page_block.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: front_page_block
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

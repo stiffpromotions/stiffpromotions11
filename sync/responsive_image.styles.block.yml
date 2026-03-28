@@ -1,0 +1,24 @@
+uuid: 38174e94-45cf-40fc-9aa1-f144c0330a97
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - image.style.480x320
+    - image.style.960x640
+  theme:
+    - stiffpromotions11
+id: block
+label: Block
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: 960x640
+    breakpoint_id: stiffpromotions11.screen.sm-min
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: 480x320
+    breakpoint_id: stiffpromotions11.screen.xs-max
+    multiplier: 1x
+breakpoint_group: stiffpromotions11.screen
+fallback_image_style: 480x320

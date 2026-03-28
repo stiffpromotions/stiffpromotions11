@@ -1,0 +1,29 @@
+uuid: 3c4e5efb-cc10-471c-a50f-63798b113698
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - media.type.image
+    - node.type.front
+id: node.front.field_image
+field_name: field_image
+entity_type: node
+bundle: front
+label: Image
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

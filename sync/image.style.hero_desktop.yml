@@ -1,0 +1,15 @@
+uuid: 4c9d4754-556a-4ba8-9ca8-4c14769f9a36
+langcode: en-gb
+status: true
+dependencies: {  }
+name: hero_desktop
+label: 'Hero (desktop)'
+effects:
+  ff237c71-f548-47af-84b0-6817d3d4ecdb:
+    uuid: ff237c71-f548-47af-84b0-6817d3d4ecdb
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1500
+      height: 750
+      anchor: center-center

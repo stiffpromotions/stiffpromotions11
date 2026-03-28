@@ -1,0 +1,19 @@
+uuid: d3439d03-db16-4416-9f69-01d0bfa25198
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_title_first_part
+    - node.type.front
+id: node.front.field_page_title_first_part
+field_name: field_page_title_first_part
+entity_type: node
+bundle: front
+label: 'Page title (first part)'
+description: 'The final page title is a combination of the <em>Page title (first part)</em> and <em>Page title (second part)</em>. The first part is themed in the outline font, and the second part is themed with the solid font.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,15 +1,34 @@
 // Sub theme styling.
 @import 'variables_drupal';
 
+// Local fonts
+@font-face {
+  font-family: "Alpha Medium";
+  src: url("../fonts/alpha-medium.woff2") format("woff2"),
+       url("../fonts/alpha-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alpha Outline";
+  src: url("../fonts/alpha-outline.woff2") format("woff2"),
+       url("../fonts/alpha-outline.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 // Bootstrap overridden variables.
 // @see https://getbootstrap.com/docs/5.2/customize/sass/#variable-defaults.
 @import 'variables_bootstrap';
 
 // Include bootstrap.
 @import '../../../../themes/contrib/bootstrap5/scss/style';
-
-// Google fonts
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 @import 'normalize';
 @import 'links';

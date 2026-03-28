@@ -1,0 +1,36 @@
+uuid: 49806e49-6cea-4ddf-bd40-3bb5a437f2c9
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.front
+    - paragraphs.paragraphs_type.front_page_block
+    - paragraphs.paragraphs_type.front_page_columns
+  module:
+    - entity_reference_revisions
+id: node.front.field_content
+field_name: field_content
+entity_type: node
+bundle: front
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      front_page_block: front_page_block
+      front_page_columns: front_page_columns
+    negate: 0
+    target_bundles_drag_drop:
+      front_page_block:
+        weight: 2
+        enabled: true
+      front_page_columns:
+        weight: 4
+        enabled: true
+field_type: entity_reference_revisions

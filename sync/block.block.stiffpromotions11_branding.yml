@@ -1,6 +1,6 @@
-uuid: 3943d093-e239-4eb5-aee5-da96e0822b68
-langcode: en
-status: true
+uuid: 43b32a80-c360-4b87-a0fe-3ede04a3bc53
+langcode: en-gb
+status: false
 dependencies:
   module:
     - system
@@ -19,7 +19,7 @@ settings:
   label: 'Site branding'
   label_display: '0'
   provider: system
-  use_site_logo: true
-  use_site_name: false
+  use_site_logo: false
+  use_site_name: true
   use_site_slogan: false
 visibility: {  }

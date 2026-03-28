@@ -2,13 +2,59 @@ nav.navbar {
   padding: 15px 0;
 }
 
+/* Main menu */
+#block-stiffpromotions11-main-navigation {
+  ul.navbar-nav {
+    font-family: $headings-font-family;
+    font-size: 28px;
+    text-transform: uppercase;
+    gap: 45px;
+    align-items: baseline;
 
-/* Secondary navigation */
-#block-stiffpromotions11-account-menu {
-  ul a {
-    color: $white;
-    &:hover {
-      color: $orange;
+    @media (min-width: 992px) and (max-width: 1199px) {
+      gap: 30px;
     }
+
+    @media (max-width: 991px) {
+      gap: 10px;
+      align-items: flex-end;
+      margin-bottom: 60px;
+      // padding-right: 15px;
+    }
+
+    li {
+      span {
+        padding: 0;
+        margin: 0;
+        line-height: 1;
+      }
+    }
+  }
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border: none;
+    outline: none;
+    box-shadow: inherit;
+  }
+}
+
+// Using Bootstrap's default menu, when OPEN then the hamburger lines are COLOURED
+.navbar-toggler {
+  .navbar-toggler-icon {
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23999999' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+}
+
+// Using Bootstrap's default menu, when CLOSED then the hamburger lines are BLACK
+.navbar-toggler.collapsed {
+  .navbar-toggler-icon {
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23000000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   }
 }

@@ -1,9 +1,7 @@
+@use "sass:color";
+@use "sass:math";
+
 // Bootstrap variables (overrides).
-
-
-// Colour generator
-// https://huemint.com/bootstrap-basic/#palette=687dac-ffffff-040006-821f09-c16712-636f59
-
 
 $form-text-margin-top: 0;
 $legend-font-size: 1rem;
@@ -54,24 +52,24 @@ $container-max-widths: (
 );
 
 
-// Locked (do not change)
-$white:  #f5f5f7 !default;
+// Core brand palette
+$white:  #f7f7f6;
 $black:  #000000 !default;
-$gray:   #1c1c1c !default;
+$gray:   #8c8c8c !default; // 55% tint of #1f1f1f
 
-$orange: #FD8700 !default; // primary
-$red:    #DB0000 !default; // secondary
+$yellow: #FFDE06 !default;
+$green:  #71BC20 !default;
+$blue:   #0F1F3D !default;
 
-// Updated supporting colours (chosen to complement orange/red)
-$yellow: #E3B100 !default; // warmer, more premium warning (less "lemon")
-$green:  #2FA36B !default; // success: clean, modern, not too neon
-$blue:   #1F63B7 !default; // deeper blue to balance orange (strong complementary)
+// Filled-in supporting colours
+$orange: #F28C00 !default; // sits naturally between yellow and red
+$red:    #D7263D !default; // strong accent/error colour with enough depth
 
-// Optional additions (handy in components, charts, badges, links)
-$teal:   #0A8F8A !default; // info: sits between green/blue without clashing
-$purple: #6A3FB5 !default; // accent: pairs nicely with orange for highlights
-$navy:   #0F2F4A !default; // deep anchor colour for headers/footers
-$stone:  #B9BCC3 !default; // neutral for borders, disabled states
+// Optional additions (kept in family with the new palette)
+$teal:   #2D8C7F !default; // bridges green and blue
+$purple: #5B4BA6 !default; // restrained supporting accent
+$navy:   #0A1630 !default; // deeper version of brand blue
+$stone:  #C9C9C3 !default; // warm neutral for borders and muted UI states
 
 
 // Bootstrap semantic assignments
@@ -134,7 +132,7 @@ $colors: map-merge((
 @each $color-name, $color in $colors {       
     @each $variant-name, $percent in $color-variants {
         $mix-color: if($percent < 0%, white, black);
-        $colors: map-merge($colors, ($color-name+'-'+$variant-name: mix($color, $mix-color, abs($percent))));
+        $colors: map-merge($colors, ($color-name+'-'+$variant-name: mix($color, $mix-color, math.abs($percent))));
     }
 }
 
@@ -188,7 +186,7 @@ $enable-hover-media-query: true;
   }
   a#{$parent} {
     @include hover-focus {
-      color: darken($color, 10%) !important;
+      color: color.adjust($color, $lightness: -10%) !important;
     }
   }
 }
@@ -199,7 +197,7 @@ $enable-hover-media-query: true;
   }
   a#{$parent} {
     @include hover-focus {
-      background-color: darken($color, 10%) !important;
+      background-color: color.adjust($color, $lightness: -10%) !important;
     }
   }
 }
@@ -233,17 +231,17 @@ $enable-hover-media-query: true;
 
 
 // Fonts
-$font-family-sans-serif: "Plus Jakarta Sans", sans-serif;
+$font-family-sans-serif: "Open Sans", sans-serif;
 $font-family-base: $font-family-sans-serif;
 $font-size-base: 1.2rem;
-$line-height-base: 1.5;
+$line-height-base: 1.35;
 $font-weight-normal: 400;
 $font-weight-bold: 700;
-$body-color: $black;
+$body-color: $gray;
 
-$headings-font-family: "Plus Jakarta Sans", sans-serif;
+$headings-font-family: "Alpha Medium", sans-serif;
 $headings-font-weight: 200;
-$headings-color: $white;
+$headings-color: $black;
 
 $h1-font-size: $font-size-base * 2.5;
 $h2-font-size: $font-size-base * 1.75;
@@ -259,10 +257,10 @@ $link-hover-color: $orange;
 $link-hover-decoration: underline;
 
 // Image border radius
-$border-radius-img: 10px;
+$border-radius-img: 8px;
 
 // Border radius
-$border-radius: 20px;
+$border-radius: 10px;
 
 // Border thicknesses
 $border-thick: 6px;

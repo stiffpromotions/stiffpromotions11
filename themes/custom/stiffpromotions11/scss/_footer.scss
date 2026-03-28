@@ -1,0 +1,92 @@
+footer {
+  > .container {
+    // border-top: 1px solid $gray;
+    padding-top: 1rem;
+  }
+
+  /* Position Footer and Social Media menus on the same row */
+  .region-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 767px) {
+      align-items: flex-start;
+    }
+  }
+}
+
+
+/* Footer menu */
+#block-stiffpromotions11-footer {
+  font-size: 24px;
+
+  @media (max-width: 991px) {
+    font-size: 18px;
+  }
+
+  .footer-menu-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-self: start;
+    align-items: baseline;
+    gap: 30px;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
+  ul.nav {
+    font-family: $headings-font-family;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 30px;
+
+    @media (max-width: 991px) {
+      gap: 20px;
+    }
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    li span {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+
+/* Social media icons menu */
+#block-stiffpromotions11-socialicons {
+  ul.nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 15px;
+    font-size: 28px;
+
+    @media (max-width: 991px) {
+      font-size: 24px;
+    }
+
+    @media (max-width: 991px) {
+      font-size: 18px;
+    }
+
+    li a {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

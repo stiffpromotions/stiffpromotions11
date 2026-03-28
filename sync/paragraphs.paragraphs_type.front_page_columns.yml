@@ -1,0 +1,10 @@
+uuid: b4e8e17c-b440-4f5d-bb12-189e3e100e2b
+langcode: en-gb
+status: true
+dependencies: {  }
+id: front_page_columns
+label: 'Front page columns'
+icon_uuid: null
+icon_default: null
+description: '<em>Front page columns</em> typically appear on the home page and are three simple columns of text.'
+behavior_plugins: {  }
