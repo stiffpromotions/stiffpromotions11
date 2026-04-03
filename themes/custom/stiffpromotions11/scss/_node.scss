@@ -6,6 +6,11 @@ body,
   font-optical-sizing: auto;
 }
 
-
-
-
+/* We want to limit the width of container-fluid for ultrawide screens */
+.fluid-limit {
+  width: inherit;
+  max-width: 2500px;
+  // max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+}

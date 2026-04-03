@@ -13,6 +13,7 @@ module:
   ckeditor5: 0
   config: 0
   contextual: 0
+  crop: 0
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0
@@ -30,6 +31,7 @@ module:
   honeypot: 0
   httpswww: 0
   image: 0
+  image_widget_crop: 0
   klaro: 0
   language: 0
   link: 0

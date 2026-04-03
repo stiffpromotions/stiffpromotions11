@@ -16028,7 +16028,7 @@ template {
   border: 0px;
   color: #f7f7f6;
   padding: 12px 16px;
-  border-radius: 8px;
+  border-radius: 6px;
   transition: background-color 0.2s ease;
 }
 .btn:hover, button.link:hover, .button:hover, .node-preview-container .node-preview-backlink:hover {
@@ -16203,15 +16203,21 @@ body,
   font-optical-sizing: auto;
 }
 
+/* We want to limit the width of container-fluid for ultrawide screens */
+.fluid-limit {
+  width: inherit;
+  max-width: 2500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .page-node-type-front {
   /* Hero */
 }
 .page-node-type-front .hero-wrapper {
   position: relative;
   margin-bottom: 60px;
-}
-.page-node-type-front .hero-wrapper img {
-  border-radius: 8px;
+  background-color: plum;
 }
 .page-node-type-front .hero-wrapper h1, .page-node-type-front .hero-wrapper .h1 {
   position: absolute;
@@ -16313,7 +16319,7 @@ body,
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 .page-node-type-front .field__item .paragraph--type--front-page-block .text-wrapper {
   flex: 1 1 auto;
@@ -16374,16 +16380,18 @@ body,
   margin-bottom: 90px;
   background-color: rgb(226.25, 226.25, 226.25);
   padding: 90px 30px;
+}
+.page-node-type-front .paragraph--type--front-page-columns .container {
   display: flex;
   flex-direction: row;
   gap: 60px;
 }
-.page-node-type-front .paragraph--type--front-page-columns h2, .page-node-type-front .paragraph--type--front-page-columns .h2 {
+.page-node-type-front .paragraph--type--front-page-columns .container h2, .page-node-type-front .paragraph--type--front-page-columns .container .h2 {
   padding-top: 30px;
   border-top: 1px solid rgb(197.5, 197.5, 197.5);
 }
 @media (max-width: 991px) {
-  .page-node-type-front .paragraph--type--front-page-columns {
+  .page-node-type-front .paragraph--type--front-page-columns .container {
     padding: 30px;
     flex-direction: column;
     gap: 30px;

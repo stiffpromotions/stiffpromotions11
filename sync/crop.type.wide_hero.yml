@@ -1,0 +1,12 @@
+uuid: 8492cccf-2696-425a-b31c-69e19636ab9b
+langcode: en-gb
+status: true
+dependencies: {  }
+label: 'Wide hero'
+id: wide_hero
+description: 'Used for tablet and desktop devices, this is a more stretched out 10:3 aspect ratio.'
+aspect_ratio: '10:3'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

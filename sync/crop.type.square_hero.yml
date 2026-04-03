@@ -1,0 +1,12 @@
+uuid: ef5665f9-1302-4540-aa22-fc7815ff25f3
+langcode: en-gb
+status: true
+dependencies: {  }
+label: 'Square hero'
+id: square_hero
+description: 'Used for mobile devices, this is a squarer out 3:2 aspect ratio.'
+aspect_ratio: '3:2'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

@@ -43,7 +43,8 @@
     'paragraph',
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
-    not paragraph.isPublished() ? 'paragraph--unpublished'
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+    'fluid-limit'
   ]
 %}
 
@@ -54,46 +55,50 @@
     <div{{ attributes.addClass(classes).setAttribute('id', 'paragraph-' ~ paragraph.id()) }}>
       {% block content %}
 
-        <div class="column-wrapper column-1">
-          {% if content.field_column_1_title is not empty %}
-            <h2>
-              {{ content.field_column_1_title }}
-            </h2>
-          {% endif %}
+        <div class="container">
 
-          {% if content.field_column_1_text is not empty %}
-            <div class="text">
-              {{ content.field_column_1_text }}
-            </div>
-          {% endif %}
-        </div>
+          <div class="column-wrapper column-1">
+            {% if content.field_column_1_title is not empty %}
+              <h2>
+                {{ content.field_column_1_title }}
+              </h2>
+            {% endif %}
 
-        <div class="column-wrapper column-2">
-          {% if content.field_column_2_title is not empty %}
-            <h2>
-              {{ content.field_column_2_title }}
-            </h2>
-          {% endif %}
+            {% if content.field_column_1_text is not empty %}
+              <div class="text">
+                {{ content.field_column_1_text }}
+              </div>
+            {% endif %}
+          </div>
 
-          {% if content.field_column_2_text is not empty %}
-            <div class="text">
-              {{ content.field_column_2_text }}
-            </div>
-          {% endif %}
-        </div>
+          <div class="column-wrapper column-2">
+            {% if content.field_column_2_title is not empty %}
+              <h2>
+                {{ content.field_column_2_title }}
+              </h2>
+            {% endif %}
 
-        <div class="column-wrapper column-3">
-          {% if content.field_column_3_title is not empty %}
-            <h2>
-              {{ content.field_column_3_title }}
-            </h2>
-          {% endif %}
+            {% if content.field_column_2_text is not empty %}
+              <div class="text">
+                {{ content.field_column_2_text }}
+              </div>
+            {% endif %}
+          </div>
 
-          {% if content.field_column_3_text is not empty %}
-            <div class="text">
-              {{ content.field_column_3_text }}
-            </div>
-          {% endif %}
+          <div class="column-wrapper column-3">
+            {% if content.field_column_3_title is not empty %}
+              <h2>
+                {{ content.field_column_3_title }}
+              </h2>
+            {% endif %}
+
+            {% if content.field_column_3_text is not empty %}
+              <div class="text">
+                {{ content.field_column_3_text }}
+              </div>
+            {% endif %}
+          </div>
+
         </div>
 
       {% endblock %}

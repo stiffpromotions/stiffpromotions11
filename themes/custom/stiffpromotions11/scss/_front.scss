@@ -4,10 +4,8 @@
   .hero-wrapper {
     position: relative;
     margin-bottom: 60px;
+    background-color: plum;
 
-    img {
-      border-radius: $border-radius-img;
-    }
 
     h1 {
       position: absolute;
@@ -129,19 +127,22 @@
     margin-bottom: 90px;
     background-color: $gray-200;
     padding: 90px 30px;
-    display: flex;
-    flex-direction: row;
-    gap: 60px;
 
-    h2 {
-      padding-top: 30px;
-      border-top: 1px solid $gray-300;
-    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      gap: 60px;
 
-    @media (max-width: 991px) {
-      padding: 30px;
-      flex-direction: column;
-      gap: 30px;
+      h2 {
+        padding-top: 30px;
+        border-top: 1px solid $gray-300;
+      }
+
+      @media (max-width: 991px) {
+        padding: 30px;
+        flex-direction: column;
+        gap: 30px;
+      }
     }
   }
 }

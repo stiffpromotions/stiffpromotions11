@@ -4,12 +4,15 @@ status: true
 dependencies:
   config:
     - field.field.node.front.field_content
+    - field.field.node.front.field_hero
     - field.field.node.front.field_image
     - field.field.node.front.field_page_title_first_part
     - field.field.node.front.field_page_title_second_part
     - node.type.front
+    - responsive_image.styles.hero
   module:
     - entity_reference_revisions
+    - responsive_image
     - user
 id: node.front.default
 targetEntityType: node
@@ -23,7 +26,18 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 104
+    weight: 5
+    region: content
+  field_hero:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: hero
+      image_link: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
     region: content
   field_image:
     type: entity_reference_entity_view
@@ -32,7 +46,7 @@ content:
       view_mode: hero
       link: false
     third_party_settings: {  }
-    weight: 101
+    weight: 2
     region: content
   field_page_title_first_part:
     type: string
@@ -40,7 +54,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 102
+    weight: 3
     region: content
   field_page_title_second_part:
     type: string
@@ -48,12 +62,12 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 103
+    weight: 4
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
   langcode: true

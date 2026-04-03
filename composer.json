@@ -31,6 +31,7 @@
         "drupal/gin_toolbar": "^3.0",
         "drupal/honeypot": "^2.2",
         "drupal/httpswww": "^2.1",
+        "drupal/image_widget_crop": "^3.0",
         "drupal/klaro": "^3.0",
         "drupal/link_attributes": "^2.1",
         "drupal/paragraphs": "^1.20",

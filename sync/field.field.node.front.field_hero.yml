@@ -1,0 +1,38 @@
+uuid: 9c9b8724-fffd-4b51-b0fc-626e668ac697
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero
+    - node.type.front
+  module:
+    - image
+id: node.front.field_hero
+field_name: field_hero
+entity_type: node
+bundle: front
+label: Hero
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: hero
+  file_extensions: 'png gif jpg jpeg webp'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image
