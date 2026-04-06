@@ -1,0 +1,10 @@
+uuid: 3b3de2e9-54aa-461f-8099-4fa75baf8095
+langcode: en-gb
+status: true
+dependencies: {  }
+id: basic_text
+label: 'Basic text'
+icon_uuid: null
+icon_default: null
+description: 'A simple text block for sections of copy.'
+behavior_plugins: {  }

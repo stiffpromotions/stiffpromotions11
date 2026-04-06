@@ -1,0 +1,44 @@
+uuid: 0f94f4d0-ea89-4713-8f14-e94837239221
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.grey_text_block.field_body
+    - field.field.paragraph.grey_text_block.field_button
+    - field.field.paragraph.grey_text_block.field_title
+    - paragraphs.paragraphs_type.grey_text_block
+  module:
+    - link
+    - text
+id: paragraph.grey_text_block.default
+targetEntityType: paragraph
+bundle: grey_text_block
+mode: default
+content:
+  field_body:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_button:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

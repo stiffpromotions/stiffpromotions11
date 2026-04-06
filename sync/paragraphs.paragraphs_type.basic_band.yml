@@ -1,0 +1,10 @@
+uuid: c91813af-b44f-4b51-84f3-766abc11d8bd
+langcode: en-gb
+status: true
+dependencies: {  }
+id: basic_band
+label: 'Basic band'
+icon_uuid: null
+icon_default: null
+description: 'This is a temporary paragraph type to populate the "Our Artists" page with multiple bands.'
+behavior_plugins: {  }

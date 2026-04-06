@@ -1865,11 +1865,11 @@
   --bs-tertiary-bg: rgb(243.5, 243.5, 243.5);
   --bs-tertiary-bg-rgb: 244, 244, 244;
   --bs-heading-color: #000000;
-  --bs-link-color: #FFDE06;
-  --bs-link-color-rgb: 255, 222, 6;
+  --bs-link-color: #0F1F3D;
+  --bs-link-color-rgb: 15, 31, 61;
   --bs-link-decoration: none;
-  --bs-link-hover-color: #F28C00;
-  --bs-link-hover-color-rgb: 242, 140, 0;
+  --bs-link-hover-color: #1e315a;
+  --bs-link-hover-color-rgb: 30, 49, 90;
   --bs-link-hover-decoration: underline;
   --bs-code-color: #d63384;
   --bs-highlight-color: #8c8c8c;
@@ -5028,7 +5028,7 @@ a > .ck-content code {
   --bs-btn-disabled-color: dimgray;
   --bs-btn-disabled-border-color: transparent;
   --bs-btn-box-shadow: 0 0 0 #000;
-  --bs-btn-focus-shadow-rgb: 217, 189, 5;
+  --bs-btn-focus-shadow-rgb: 50, 63, 89;
   text-decoration: none;
 }
 .ck-content .btn-link:hover, .ck-content button.link:hover, .ck-content .btn-link:focus-visible, .ck-content button.link:focus-visible {
@@ -13332,11 +13332,11 @@ a > .ck-content code {
   }
 }
 .ck-content .ui-widget-content a {
-  color: #FFDE06;
+  color: #0F1F3D;
   text-decoration: none;
 }
 .ck-content .ui-widget-content a:hover {
-  color: #F28C00;
+  color: #1e315a;
   text-decoration: underline;
 }
 .ck-content .ckeditor-buttons li .cke-icon-only {
@@ -13349,7 +13349,7 @@ a > .ck-content code {
   vertical-align: initial;
 }
 .ck-content button.link {
-  color: #FFDE06;
+  color: #0F1F3D;
 }
 .ck-content .button--small {
   --bs-btn-padding-y: 0.25rem;
@@ -14051,11 +14051,11 @@ a > .ck-content code {
   color: rgb(64.32, 64.32, 62.4);
 }
 .ck-content .views-admin a {
-  color: #FFDE06;
+  color: #0F1F3D;
   text-decoration: none;
 }
 .ck-content .views-admin a:hover {
-  color: #F28C00;
+  color: #1e315a;
 }
 .ck-content .views-admin .views-displays .tabs {
   list-style: none;
@@ -14068,11 +14068,11 @@ a > .ck-content code {
   padding: 0.1em 0.5em;
 }
 .ck-content .views-admin .dropbutton .dropbutton-action .btn-primary {
-  color: #FFDE06;
+  color: #0F1F3D;
   text-decoration: none;
 }
 .ck-content .views-admin .dropbutton .dropbutton-action .btn-primary:hover {
-  color: #F28C00;
+  color: #1e315a;
   text-decoration: none;
 }
 .ck-content .views-admin .view-preview-form .form-item-view-args,
@@ -14609,6 +14609,9 @@ a > .ck-content code {
 .ck-content [hidden] {
   display: none;
 }
+.ck-content main p a {
+  font-weight: 700;
+}
 .ck-content .btn, .ck-content button.link, .ck-content .button, .ck-content a.button, .ck-content .node-preview-container .node-preview-backlink {
   display: inline-block;
   font-family: "Open Sans", sans-serif;
@@ -14754,7 +14757,14 @@ a > .ck-content code {
     gap: 0;
   }
 }
-.ck-content #block-stiffpromotions11-footer ul.nav li span, .ck-content #block-stiffpromotions11-footer .media-library-view--widget ul.view-header li span, .ck-content .media-library-view--widget #block-stiffpromotions11-footer ul.view-header li span {
+.ck-content #block-stiffpromotions11-footer ul.nav li span, .ck-content #block-stiffpromotions11-footer .media-library-view--widget ul.view-header li span, .ck-content .media-library-view--widget #block-stiffpromotions11-footer ul.view-header li span,
+.ck-content #block-stiffpromotions11-footer ul.nav li .nav-link,
+.ck-content #block-stiffpromotions11-footer .media-library-view--widget ul.view-header li .nav-link,
+.ck-content .media-library-view--widget #block-stiffpromotions11-footer ul.view-header li .nav-link,
+.ck-content #block-stiffpromotions11-footer ul.nav li .media-library-view--widget .view-header a,
+.ck-content .media-library-view--widget .view-header #block-stiffpromotions11-footer ul.nav li a,
+.ck-content #block-stiffpromotions11-footer .media-library-view--widget ul.view-header li a,
+.ck-content .media-library-view--widget #block-stiffpromotions11-footer ul.view-header li a {
   margin: 0;
   padding: 0;
 }
@@ -14791,6 +14801,15 @@ a > .ck-content code {
   font-optical-sizing: auto;
 }
 .ck-content {
+  /* Nav tabs */
+}
+.ck-content #block-stiffpromotions11-local-tasks ul.nav-tabs, .ck-content #block-stiffpromotions11-local-tasks .media-library-view--widget ul.view-header, .ck-content .media-library-view--widget #block-stiffpromotions11-local-tasks ul.view-header {
+  justify-content: center !important;
+}
+.ck-content #block-stiffpromotions11-local-tasks ul.nav-tabs a, .ck-content #block-stiffpromotions11-local-tasks .media-library-view--widget ul.view-header a, .ck-content .media-library-view--widget #block-stiffpromotions11-local-tasks ul.view-header a {
+  font-weight: 700;
+}
+.ck-content {
   /* We want to limit the width of container-fluid for ultrawide screens */
 }
 .ck-content .fluid-limit {
@@ -14799,13 +14818,156 @@ a > .ck-content code {
   margin-left: auto;
   margin-right: auto;
 }
+.ck-content {
+  /* General pages use the built-in Article content type */
+}
+.ck-content .page-node-type-article .header-wrapper {
+  background-color: rgb(226.25, 226.25, 226.25);
+  padding: 60px 0;
+  margin-bottom: 60px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .ck-content .page-node-type-article .header-wrapper {
+    padding: 45px 0;
+    margin-bottom: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .ck-content .page-node-type-article .header-wrapper {
+    padding: 30px 0;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 1600px) {
+  .ck-content .page-node-type-article .header-wrapper > .container {
+    max-width: 1200px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .ck-content .page-node-type-article .header-wrapper > .container {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .ck-content .page-node-type-article .header-wrapper > .container {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+  }
+}
+.ck-content .page-node-type-article .header-wrapper h1, .ck-content .page-node-type-article .header-wrapper .h1 {
+  font-family: "Alpha Outline", sans-serif;
+  font-size: clamp(48px, 36px + 4vw, 96px);
+}
+.ck-content .paragraph--type--basic-band,
+.ck-content .paragraph--type--basic-text {
+  max-width: 1000px;
+  margin: 0 auto 60px auto;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .ck-content .paragraph--type--basic-band,
+  .ck-content .paragraph--type--basic-text {
+    margin: 0 auto 45px auto;
+  }
+}
+@media (max-width: 767px) {
+  .ck-content .paragraph--type--basic-band,
+  .ck-content .paragraph--type--basic-text {
+    margin: 0 auto 0 auto;
+  }
+}
+.ck-content .paragraph--type--basic-band img,
+.ck-content .paragraph--type--basic-text img {
+  border-radius: 6px;
+  margin-bottom: 45px;
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .ck-content .paragraph--type--basic-band img,
+  .ck-content .paragraph--type--basic-text img {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .ck-content .paragraph--type--basic-band img,
+  .ck-content .paragraph--type--basic-text img {
+    margin-bottom: inherit;
+  }
+}
+.ck-content .paragraph--type--basic-band h2, .ck-content .paragraph--type--basic-band .h2,
+.ck-content .paragraph--type--basic-text h2,
+.ck-content .paragraph--type--basic-text .h2 {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .ck-content .paragraph--type--basic-band h2, .ck-content .paragraph--type--basic-band .h2,
+  .ck-content .paragraph--type--basic-text h2,
+  .ck-content .paragraph--type--basic-text .h2 {
+    margin-bottom: 15px;
+  }
+}
+.ck-content .paragraph--type--basic-band .text-wrapper,
+.ck-content .paragraph--type--basic-text .text-wrapper {
+  padding: 0 60px;
+}
+@media (max-width: 991px) {
+  .ck-content .paragraph--type--basic-band .text-wrapper,
+  .ck-content .paragraph--type--basic-text .text-wrapper {
+    padding: inherit;
+  }
+}
+.ck-content .paragraph--type--basic-band .text,
+.ck-content .paragraph--type--basic-text .text {
+  margin-bottom: 30px;
+}
+.ck-content .paragraph--type--grey-text-block {
+  margin-bottom: 60px;
+}
+.ck-content .paragraph--type--grey-text-block .outer-wrapper {
+  max-width: 1000px;
+}
+.ck-content .paragraph--type--grey-text-block .inner-wrapper {
+  margin: 0 auto;
+}
+@media (min-width: 992px) {
+  .ck-content .paragraph--type--grey-text-block .inner-wrapper {
+    max-width: 832px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .ck-content .paragraph--type--grey-text-block .inner-wrapper {
+    max-width: 672px;
+  }
+}
+@media (max-width: 767px) {
+  .ck-content .paragraph--type--grey-text-block .inner-wrapper {
+    max-width: 492px;
+  }
+}
+.ck-content .paragraph--type--grey-text-block .text-wrapper {
+  background-color: rgb(226.25, 226.25, 226.25);
+  max-width: inherit;
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+@media (max-width: 991px) {
+  .ck-content .paragraph--type--grey-text-block .text-wrapper {
+    padding-top: 45px !important;
+    padding-bottom: 45px !important;
+  }
+}
+.ck-content .paragraph--type--grey-text-block h2, .ck-content .paragraph--type--grey-text-block .h2,
+.ck-content .paragraph--type--grey-text-block .text {
+  margin-bottom: 15px;
+}
 .ck-content .page-node-type-front {
   /* Hero */
 }
 .ck-content .page-node-type-front .hero-wrapper {
   position: relative;
   margin-bottom: 60px;
-  background-color: plum;
 }
 .ck-content .page-node-type-front .hero-wrapper h1, .ck-content .page-node-type-front .hero-wrapper .h1 {
   position: absolute;

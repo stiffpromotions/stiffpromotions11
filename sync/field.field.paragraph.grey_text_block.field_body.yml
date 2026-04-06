@@ -1,0 +1,22 @@
+uuid: c9a7085b-82ba-4f79-9676-a02a61497d3f
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.grey_text_block
+  module:
+    - text
+id: paragraph.grey_text_block.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: grey_text_block
+label: Body
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

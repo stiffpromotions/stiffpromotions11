@@ -2277,11 +2277,11 @@ a.bg-gray-900:hover {
   --bs-tertiary-bg: rgb(243.5, 243.5, 243.5);
   --bs-tertiary-bg-rgb: 244, 244, 244;
   --bs-heading-color: #000000;
-  --bs-link-color: #FFDE06;
-  --bs-link-color-rgb: 255, 222, 6;
+  --bs-link-color: #0F1F3D;
+  --bs-link-color-rgb: 15, 31, 61;
   --bs-link-decoration: none;
-  --bs-link-hover-color: #F28C00;
-  --bs-link-hover-color-rgb: 242, 140, 0;
+  --bs-link-hover-color: #1e315a;
+  --bs-link-hover-color-rgb: 30, 49, 90;
   --bs-link-hover-decoration: underline;
   --bs-code-color: #d63384;
   --bs-highlight-color: #8c8c8c;
@@ -5665,7 +5665,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: dimgray;
   --bs-btn-disabled-border-color: transparent;
   --bs-btn-box-shadow: 0 0 0 #000;
-  --bs-btn-focus-shadow-rgb: 217, 189, 5;
+  --bs-btn-focus-shadow-rgb: 50, 63, 89;
   text-decoration: none;
 }
 .btn-link:hover, button.link:hover, .btn-link:focus-visible, button.link:focus-visible {
@@ -14676,11 +14676,11 @@ textarea.form-control-lg {
   }
 }
 .ui-widget-content a {
-  color: #FFDE06;
+  color: #0F1F3D;
   text-decoration: none;
 }
 .ui-widget-content a:hover {
-  color: #F28C00;
+  color: #1e315a;
   text-decoration: underline;
 }
 
@@ -14695,7 +14695,7 @@ textarea.form-control-lg {
 }
 
 button.link {
-  color: #FFDE06;
+  color: #0F1F3D;
 }
 
 .button--small {
@@ -15476,11 +15476,11 @@ tr.region-title td {
 }
 
 .views-admin a {
-  color: #FFDE06;
+  color: #0F1F3D;
   text-decoration: none;
 }
 .views-admin a:hover {
-  color: #F28C00;
+  color: #1e315a;
 }
 .views-admin .views-displays .tabs {
   list-style: none;
@@ -15493,11 +15493,11 @@ tr.region-title td {
   padding: 0.1em 0.5em;
 }
 .views-admin .dropbutton .dropbutton-action .btn-primary {
-  color: #FFDE06;
+  color: #0F1F3D;
   text-decoration: none;
 }
 .views-admin .dropbutton .dropbutton-action .btn-primary:hover {
-  color: #F28C00;
+  color: #1e315a;
   text-decoration: none;
 }
 .views-admin .view-preview-form .form-item-view-args,
@@ -16018,6 +16018,10 @@ template {
   display: none;
 }
 
+main p a {
+  font-weight: 700;
+}
+
 .btn, button.link, .button, a.button, .node-preview-container .node-preview-backlink {
   display: inline-block;
   font-family: "Open Sans", sans-serif;
@@ -16166,7 +16170,14 @@ footer .region-footer {
     gap: 0;
   }
 }
-#block-stiffpromotions11-footer ul.nav li span, #block-stiffpromotions11-footer .media-library-view--widget ul.view-header li span, .media-library-view--widget #block-stiffpromotions11-footer ul.view-header li span {
+#block-stiffpromotions11-footer ul.nav li span, #block-stiffpromotions11-footer .media-library-view--widget ul.view-header li span, .media-library-view--widget #block-stiffpromotions11-footer ul.view-header li span,
+#block-stiffpromotions11-footer ul.nav li .nav-link,
+#block-stiffpromotions11-footer .media-library-view--widget ul.view-header li .nav-link,
+.media-library-view--widget #block-stiffpromotions11-footer ul.view-header li .nav-link,
+#block-stiffpromotions11-footer ul.nav li .media-library-view--widget .view-header a,
+.media-library-view--widget .view-header #block-stiffpromotions11-footer ul.nav li a,
+#block-stiffpromotions11-footer .media-library-view--widget ul.view-header li a,
+.media-library-view--widget #block-stiffpromotions11-footer ul.view-header li a {
   margin: 0;
   padding: 0;
 }
@@ -16203,6 +16214,14 @@ body,
   font-optical-sizing: auto;
 }
 
+/* Nav tabs */
+#block-stiffpromotions11-local-tasks ul.nav-tabs, #block-stiffpromotions11-local-tasks .media-library-view--widget ul.view-header, .media-library-view--widget #block-stiffpromotions11-local-tasks ul.view-header {
+  justify-content: center !important;
+}
+#block-stiffpromotions11-local-tasks ul.nav-tabs a, #block-stiffpromotions11-local-tasks .media-library-view--widget ul.view-header a, .media-library-view--widget #block-stiffpromotions11-local-tasks ul.view-header a {
+  font-weight: 700;
+}
+
 /* We want to limit the width of container-fluid for ultrawide screens */
 .fluid-limit {
   width: inherit;
@@ -16211,13 +16230,157 @@ body,
   margin-right: auto;
 }
 
+/* General pages use the built-in Article content type */
+.page-node-type-article .header-wrapper {
+  background-color: rgb(226.25, 226.25, 226.25);
+  padding: 60px 0;
+  margin-bottom: 60px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .page-node-type-article .header-wrapper {
+    padding: 45px 0;
+    margin-bottom: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .page-node-type-article .header-wrapper {
+    padding: 30px 0;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 1600px) {
+  .page-node-type-article .header-wrapper > .container {
+    max-width: 1200px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .page-node-type-article .header-wrapper > .container {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .page-node-type-article .header-wrapper > .container {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+  }
+}
+.page-node-type-article .header-wrapper h1, .page-node-type-article .header-wrapper .h1 {
+  font-family: "Alpha Outline", sans-serif;
+  font-size: clamp(48px, 36px + 4vw, 96px);
+}
+
+.paragraph--type--basic-band,
+.paragraph--type--basic-text {
+  max-width: 1000px;
+  margin: 0 auto 60px auto;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .paragraph--type--basic-band,
+  .paragraph--type--basic-text {
+    margin: 0 auto 45px auto;
+  }
+}
+@media (max-width: 767px) {
+  .paragraph--type--basic-band,
+  .paragraph--type--basic-text {
+    margin: 0 auto 0 auto;
+  }
+}
+.paragraph--type--basic-band img,
+.paragraph--type--basic-text img {
+  border-radius: 6px;
+  margin-bottom: 45px;
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .paragraph--type--basic-band img,
+  .paragraph--type--basic-text img {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .paragraph--type--basic-band img,
+  .paragraph--type--basic-text img {
+    margin-bottom: inherit;
+  }
+}
+.paragraph--type--basic-band h2, .paragraph--type--basic-band .h2,
+.paragraph--type--basic-text h2,
+.paragraph--type--basic-text .h2 {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .paragraph--type--basic-band h2, .paragraph--type--basic-band .h2,
+  .paragraph--type--basic-text h2,
+  .paragraph--type--basic-text .h2 {
+    margin-bottom: 15px;
+  }
+}
+.paragraph--type--basic-band .text-wrapper,
+.paragraph--type--basic-text .text-wrapper {
+  padding: 0 60px;
+}
+@media (max-width: 991px) {
+  .paragraph--type--basic-band .text-wrapper,
+  .paragraph--type--basic-text .text-wrapper {
+    padding: inherit;
+  }
+}
+.paragraph--type--basic-band .text,
+.paragraph--type--basic-text .text {
+  margin-bottom: 30px;
+}
+
+.paragraph--type--grey-text-block {
+  margin-bottom: 60px;
+}
+.paragraph--type--grey-text-block .outer-wrapper {
+  max-width: 1000px;
+}
+.paragraph--type--grey-text-block .inner-wrapper {
+  margin: 0 auto;
+}
+@media (min-width: 992px) {
+  .paragraph--type--grey-text-block .inner-wrapper {
+    max-width: 832px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .paragraph--type--grey-text-block .inner-wrapper {
+    max-width: 672px;
+  }
+}
+@media (max-width: 767px) {
+  .paragraph--type--grey-text-block .inner-wrapper {
+    max-width: 492px;
+  }
+}
+.paragraph--type--grey-text-block .text-wrapper {
+  background-color: rgb(226.25, 226.25, 226.25);
+  max-width: inherit;
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+@media (max-width: 991px) {
+  .paragraph--type--grey-text-block .text-wrapper {
+    padding-top: 45px !important;
+    padding-bottom: 45px !important;
+  }
+}
+.paragraph--type--grey-text-block h2, .paragraph--type--grey-text-block .h2,
+.paragraph--type--grey-text-block .text {
+  margin-bottom: 15px;
+}
+
 .page-node-type-front {
   /* Hero */
 }
 .page-node-type-front .hero-wrapper {
   position: relative;
   margin-bottom: 60px;
-  background-color: plum;
 }
 .page-node-type-front .hero-wrapper h1, .page-node-type-front .hero-wrapper .h1 {
   position: absolute;

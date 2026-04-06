@@ -1,0 +1,44 @@
+uuid: c399c1a3-7ff1-49eb-9764-ff366aa1e56d
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.basic_text.field_body
+    - field.field.paragraph.basic_text.field_button
+    - field.field.paragraph.basic_text.field_title
+    - paragraphs.paragraphs_type.basic_text
+  module:
+    - link
+    - text
+id: paragraph.basic_text.default
+targetEntityType: paragraph
+bundle: basic_text
+mode: default
+content:
+  field_body:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_button:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

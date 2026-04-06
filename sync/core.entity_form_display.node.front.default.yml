@@ -5,14 +5,12 @@ dependencies:
   config:
     - field.field.node.front.field_content
     - field.field.node.front.field_hero
-    - field.field.node.front.field_image
     - field.field.node.front.field_page_title_first_part
     - field.field.node.front.field_page_title_second_part
     - image.style.thumbnail
     - node.type.front
   module:
     - image_widget_crop
-    - media_library
     - paragraphs
     - path
 id: node.front.default
@@ -61,13 +59,6 @@ content:
       warn_multiple_usages: true
       show_crop_area: false
       show_default_crop: true
-    third_party_settings: {  }
-  field_image:
-    type: media_library_widget
-    weight: 7
-    region: content
-    settings:
-      media_types: {  }
     third_party_settings: {  }
   field_page_title_first_part:
     type: string_textfield

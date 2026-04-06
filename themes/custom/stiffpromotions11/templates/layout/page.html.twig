@@ -56,12 +56,12 @@ set footer_classes = ' ' ~
   (b5_footer_bg_schema != 'none' ? " bg-#{b5_footer_bg_schema}" : ' ')
 %}
 
-<header role="banner" class="container">
+<header role="banner" class="container p-0">
   {{ page.header }}
 
   {% if page.nav_branding or page.nav_main or page.nav_additional %}
   <nav class="{{ nav_classes }}">
-    <div class="{{ b5_top_container }} d-flex">
+    <div class="{{ b5_top_container }} d-flex p-4">
 
       <div id="site-logo">
         <a href="/" title="Stiff Promotions - home page">
@@ -134,7 +134,7 @@ set footer_classes = ' ' ~
 </main>
 
 {% if page.footer %}
-<footer role="contentinfo" class="container mt-auto {{ footer_classes }}">
+<footer role="contentinfo" class="container mt-auto {{ footer_classes }} p-4">
   <div class="{{ b5_top_container }}">
     {{ page.footer }}
   </div>

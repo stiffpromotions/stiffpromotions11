@@ -1,0 +1,10 @@
+uuid: d87744bf-a9ec-4c8f-b599-9b4e8cff22e1
+langcode: en-gb
+status: true
+dependencies: {  }
+id: grey_text_block
+label: 'Grey text block'
+icon_uuid: null
+icon_default: null
+description: 'Typically appears at the bottom of articles and is a simple text block with a grey background.'
+behavior_plugins: {  }

@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.node.front.field_content
     - field.field.node.front.field_hero
-    - field.field.node.front.field_image
     - field.field.node.front.field_page_title_first_part
     - field.field.node.front.field_page_title_second_part
     - node.type.front
@@ -38,15 +37,6 @@ content:
         attribute: lazy
     third_party_settings: {  }
     weight: 1
-    region: content
-  field_image:
-    type: entity_reference_entity_view
-    label: hidden
-    settings:
-      view_mode: hero
-      link: false
-    third_party_settings: {  }
-    weight: 2
     region: content
   field_page_title_first_part:
     type: string

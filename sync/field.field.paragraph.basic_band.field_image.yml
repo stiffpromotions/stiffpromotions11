@@ -1,15 +1,15 @@
-uuid: 3c4e5efb-cc10-471c-a50f-63798b113698
+uuid: 16749565-2855-482c-b0eb-749aec34e319
 langcode: en-gb
 status: true
 dependencies:
   config:
-    - field.storage.node.field_image
+    - field.storage.paragraph.field_image
     - media.type.image
-    - node.type.front
-id: node.front.field_image
+    - paragraphs.paragraphs_type.basic_band
+id: paragraph.basic_band.field_image
 field_name: field_image
-entity_type: node
-bundle: front
+entity_type: paragraph
+bundle: basic_band
 label: Image
 description: ''
 required: true
