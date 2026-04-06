@@ -1,4 +1,4 @@
-uuid: a87e4887-802e-4cca-8cb5-05be4d12a0b7
+uuid: 66f7a892-0da7-474d-a6b8-25f8ee32d305
 langcode: en-gb
 status: open
 dependencies: {  }
@@ -8,60 +8,67 @@ close: null
 uid: 1
 template: false
 archive: false
-id: event_enquiry
-title: 'Event enquiry'
+id: artist_submission
+title: 'Artist submission'
 description: ''
 categories: {  }
 elements: |-
   flexbox:
     '#type': webform_flexbox
-    name:
+    artist_band_name:
       '#type': textfield
-      '#title': Name
+      '#title': 'Artist / band name'
       '#required': true
+    contact_name:
+      '#type': textfield
+      '#title': 'Contact name'
+      '#required': true
+  flexbox_01:
+    '#type': webform_flexbox
     email:
       '#type': email
       '#title': Email
       '#required': true
-  flexbox_01:
-    '#type': webform_flexbox
-    event:
-      '#type': select
-      '#title': Event
-      '#options':
-        corporate: Corporate
-        wedding: Wedding
-        private_party: 'Private party'
-        festival: Festival
-      '#empty_option': 'Please select'
-    date:
-      '#type': date
-      '#title': Date
+    phone:
+      '#type': tel
+      '#title': Phone
   flexbox_02:
     '#type': webform_flexbox
-    event_capacity:
+    link_youtube:
+      '#type': url
+      '#title': 'Link: YouTube'
+    link_spotify:
+      '#type': url
+      '#title': 'Link: Spotify'
+  flexbox_03:
+    '#type': webform_flexbox
+    link_social_media_main:
+      '#type': url
+      '#title': 'Link: Social Media (primary)'
+    link_social_media_secondary:
+      '#type': url
+      '#title': 'Link: Social Media (secondary)'
+  flexbox_04:
+    '#type': webform_flexbox
+    bookings_last_year:
       '#type': number
-      '#title': 'Event capacity'
-      '#min': 1
-      '#max': 10000
+      '#title': 'How many bookings did you have last year?'
+      '#min': 0
+      '#max': 365
       '#step': 1
-    band_preference:
-      '#type': textfield
-      '#title': 'Band preference'
-  message:
+    bookings_this_year:
+      '#type': number
+      '#title': 'How many bookings do you have this year?'
+      '#min': 0
+      '#max': 365
+      '#step': 1
+  reason_for_representation:
     '#type': textarea
-    '#title': Message
-    '#placeholder': 'What do we need to know about your event?'
-  mailing_list:
-    '#type': checkbox
-    '#title': 'Mailing list'
-    '#description': '<p>I’d also like to join your mailing list – sign me up!</p>'
-    '#title_display': invisible
-    '#description_display': after
+    '#title': 'Why do you want to be represented by Stiff Promotions?'
   legal:
     '#type': checkbox
     '#title': Legal
-    '#description': '<p>I have read and understand the Privacy Policy and Terms of Service</p>'
+    '#description': '<p>I accept the Terms &amp; Conditions and Privacy and Cookie Policies</p>'
     '#title_display': invisible
     '#description_display': after
     '#required': true
