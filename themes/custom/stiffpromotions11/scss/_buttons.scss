@@ -31,5 +31,14 @@
     font-weight: inherit;
     font-size: 28px;
     padding: 15px 20px 10px 20px !important; // Uneven padding accounts for unusual baseline positioning of Alpha font
+
+    &.active {
+      background-color: $blue;
+      color: $white;
+
+      &:hover {
+        background-color: lighten($blue, 20%);
+      }
+    }
   }
 }

@@ -1,0 +1,28 @@
+form {
+  label {
+    font-family: $headings-font-family;
+    color: $black;
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+
+  .form-required::after {
+    height: 10px;
+  }
+
+  .form-control,
+  .form-select {
+    border-radius: $border-radius-img;
+  }
+  
+  .webform-element-description {
+    position: relative;
+    top: 2px;
+  }
+
+}
+
+.form-item-message,
+.form-item-legal {
+  margin-bottom: 45px;
+}

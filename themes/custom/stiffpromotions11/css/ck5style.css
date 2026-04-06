@@ -14639,6 +14639,13 @@ a > .ck-content code {
   font-size: 28px;
   padding: 15px 20px 10px 20px !important;
 }
+.ck-content #block-stiffpromotions11-main-navigation .btn.active, .ck-content #block-stiffpromotions11-main-navigation button.active.link, .ck-content #block-stiffpromotions11-main-navigation .active.button, .ck-content #block-stiffpromotions11-main-navigation .node-preview-container .active.node-preview-backlink, .ck-content .node-preview-container #block-stiffpromotions11-main-navigation .active.node-preview-backlink, .ck-content #block-stiffpromotions11-main-navigation .media-library-view--widget .view-header a.btn.is-active, .ck-content .media-library-view--widget .view-header #block-stiffpromotions11-main-navigation a.btn.is-active, .ck-content #block-stiffpromotions11-main-navigation .media-library-view--widget .view-header a.button.is-active, .ck-content .media-library-view--widget .view-header #block-stiffpromotions11-main-navigation a.button.is-active, .ck-content #block-stiffpromotions11-main-navigation .node-preview-container .media-library-view--widget .view-header a.node-preview-backlink.is-active, .ck-content .node-preview-container .media-library-view--widget .view-header #block-stiffpromotions11-main-navigation a.node-preview-backlink.is-active, .ck-content #block-stiffpromotions11-main-navigation .media-library-view--widget .view-header .node-preview-container a.node-preview-backlink.is-active, .ck-content .media-library-view--widget .view-header .node-preview-container #block-stiffpromotions11-main-navigation a.node-preview-backlink.is-active {
+  background-color: #0F1F3D;
+  color: #f7f7f6;
+}
+.ck-content #block-stiffpromotions11-main-navigation .btn.active:hover, .ck-content #block-stiffpromotions11-main-navigation button.active.link:hover, .ck-content #block-stiffpromotions11-main-navigation .active.button:hover, .ck-content #block-stiffpromotions11-main-navigation .node-preview-container .active.node-preview-backlink:hover, .ck-content .node-preview-container #block-stiffpromotions11-main-navigation .active.node-preview-backlink:hover, .ck-content #block-stiffpromotions11-main-navigation .media-library-view--widget .view-header a.btn.is-active:hover, .ck-content .media-library-view--widget .view-header #block-stiffpromotions11-main-navigation a.btn.is-active:hover, .ck-content #block-stiffpromotions11-main-navigation .media-library-view--widget .view-header a.button.is-active:hover, .ck-content .media-library-view--widget .view-header #block-stiffpromotions11-main-navigation a.button.is-active:hover, .ck-content #block-stiffpromotions11-main-navigation .node-preview-container .media-library-view--widget .view-header a.node-preview-backlink.is-active:hover, .ck-content .node-preview-container .media-library-view--widget .view-header #block-stiffpromotions11-main-navigation a.node-preview-backlink.is-active:hover, .ck-content #block-stiffpromotions11-main-navigation .media-library-view--widget .view-header .node-preview-container a.node-preview-backlink.is-active:hover, .ck-content .media-library-view--widget .view-header .node-preview-container #block-stiffpromotions11-main-navigation a.node-preview-backlink.is-active:hover {
+  background-color: rgb(35.1315789474, 72.6052631579, 142.8684210526);
+}
 @media (max-width: 767px) {
   .ck-content header nav.navbar {
     padding: 0;
@@ -14961,6 +14968,50 @@ a > .ck-content code {
 .ck-content .paragraph--type--grey-text-block h2, .ck-content .paragraph--type--grey-text-block .h2,
 .ck-content .paragraph--type--grey-text-block .text {
   margin-bottom: 15px;
+}
+.ck-content .paragraph--type--webform {
+  max-width: 800px;
+  margin: 0 auto 90px auto;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .ck-content .paragraph--type--webform {
+    max-width: 600px;
+  }
+}
+@media (max-width: 767px) {
+  .ck-content .paragraph--type--webform {
+    max-width: 492px;
+  }
+}
+.ck-content .paragraph--type--webform .webform-flexbox {
+  margin: 2em -0.5em;
+  gap: 30px;
+}
+@media (max-width: 767px) {
+  .ck-content .paragraph--type--webform .webform-flexbox {
+    margin: inherit;
+  }
+}
+.ck-content form label {
+  font-family: "Alpha Medium", sans-serif;
+  color: #000000;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+.ck-content form .form-required::after {
+  height: 10px;
+}
+.ck-content form .form-control,
+.ck-content form .form-select {
+  border-radius: 6px;
+}
+.ck-content form .webform-element-description {
+  position: relative;
+  top: 2px;
+}
+.ck-content .form-item-message,
+.ck-content .form-item-legal {
+  margin-bottom: 45px;
 }
 .ck-content .page-node-type-front {
   /* Hero */

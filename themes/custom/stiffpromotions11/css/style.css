@@ -16050,6 +16050,13 @@ main p a {
   font-size: 28px;
   padding: 15px 20px 10px 20px !important;
 }
+#block-stiffpromotions11-main-navigation .btn.active, #block-stiffpromotions11-main-navigation button.active.link, #block-stiffpromotions11-main-navigation .active.button, #block-stiffpromotions11-main-navigation .node-preview-container .active.node-preview-backlink, .node-preview-container #block-stiffpromotions11-main-navigation .active.node-preview-backlink, #block-stiffpromotions11-main-navigation .media-library-view--widget .view-header a.btn.is-active, .media-library-view--widget .view-header #block-stiffpromotions11-main-navigation a.btn.is-active, #block-stiffpromotions11-main-navigation .media-library-view--widget .view-header a.button.is-active, .media-library-view--widget .view-header #block-stiffpromotions11-main-navigation a.button.is-active, #block-stiffpromotions11-main-navigation .node-preview-container .media-library-view--widget .view-header a.node-preview-backlink.is-active, .node-preview-container .media-library-view--widget .view-header #block-stiffpromotions11-main-navigation a.node-preview-backlink.is-active, #block-stiffpromotions11-main-navigation .media-library-view--widget .view-header .node-preview-container a.node-preview-backlink.is-active, .media-library-view--widget .view-header .node-preview-container #block-stiffpromotions11-main-navigation a.node-preview-backlink.is-active {
+  background-color: #0F1F3D;
+  color: #f7f7f6;
+}
+#block-stiffpromotions11-main-navigation .btn.active:hover, #block-stiffpromotions11-main-navigation button.active.link:hover, #block-stiffpromotions11-main-navigation .active.button:hover, #block-stiffpromotions11-main-navigation .node-preview-container .active.node-preview-backlink:hover, .node-preview-container #block-stiffpromotions11-main-navigation .active.node-preview-backlink:hover, #block-stiffpromotions11-main-navigation .media-library-view--widget .view-header a.btn.is-active:hover, .media-library-view--widget .view-header #block-stiffpromotions11-main-navigation a.btn.is-active:hover, #block-stiffpromotions11-main-navigation .media-library-view--widget .view-header a.button.is-active:hover, .media-library-view--widget .view-header #block-stiffpromotions11-main-navigation a.button.is-active:hover, #block-stiffpromotions11-main-navigation .node-preview-container .media-library-view--widget .view-header a.node-preview-backlink.is-active:hover, .node-preview-container .media-library-view--widget .view-header #block-stiffpromotions11-main-navigation a.node-preview-backlink.is-active:hover, #block-stiffpromotions11-main-navigation .media-library-view--widget .view-header .node-preview-container a.node-preview-backlink.is-active:hover, .media-library-view--widget .view-header .node-preview-container #block-stiffpromotions11-main-navigation a.node-preview-backlink.is-active:hover {
+  background-color: rgb(35.1315789474, 72.6052631579, 142.8684210526);
+}
 
 @media (max-width: 767px) {
   header nav.navbar {
@@ -16373,6 +16380,53 @@ body,
 .paragraph--type--grey-text-block h2, .paragraph--type--grey-text-block .h2,
 .paragraph--type--grey-text-block .text {
   margin-bottom: 15px;
+}
+
+.paragraph--type--webform {
+  max-width: 800px;
+  margin: 0 auto 90px auto;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .paragraph--type--webform {
+    max-width: 600px;
+  }
+}
+@media (max-width: 767px) {
+  .paragraph--type--webform {
+    max-width: 492px;
+  }
+}
+.paragraph--type--webform .webform-flexbox {
+  margin: 2em -0.5em;
+  gap: 30px;
+}
+@media (max-width: 767px) {
+  .paragraph--type--webform .webform-flexbox {
+    margin: inherit;
+  }
+}
+
+form label {
+  font-family: "Alpha Medium", sans-serif;
+  color: #000000;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+form .form-required::after {
+  height: 10px;
+}
+form .form-control,
+form .form-select {
+  border-radius: 6px;
+}
+form .webform-element-description {
+  position: relative;
+  top: 2px;
+}
+
+.form-item-message,
+.form-item-legal {
+  margin-bottom: 45px;
 }
 
 .page-node-type-front {

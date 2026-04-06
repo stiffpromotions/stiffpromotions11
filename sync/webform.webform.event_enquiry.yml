@@ -1,47 +1,69 @@
-uuid: cc104c1e-7ee6-4bdc-9a95-c2bfc5be9b5d
+uuid: a87e4887-802e-4cca-8cb5-05be4d12a0b7
 langcode: en-gb
-status: closed
-dependencies:
-  enforced:
-    module:
-      - webform
-_core:
-  default_config_hash: _je-MWeeJB6gfm6iECiqjcyNetfMFbn-YIInYwZ1gIk
+status: open
+dependencies: {  }
 weight: 0
 open: null
 close: null
-uid: null
+uid: 1
 template: false
-archive: true
-id: contact
-title: Contact
-description: '<p>Basic email contact webform.</p>'
+archive: false
+id: event_enquiry
+title: 'Event enquiry'
+description: ''
 categories: {  }
 elements: |-
-  name:
-    '#title': 'Your Name'
-    '#type': textfield
-    '#required': true
-    '#default_value': '[current-user:display-name]'
-  email:
-    '#title': 'Your Email'
-    '#type': email
-    '#required': true
-    '#default_value': '[current-user:mail]'
-  subject:
-    '#title': Subject
-    '#type': textfield
-    '#required': true
-    '#test': 'Testing contact webform from [site:name]'
+  flexbox:
+    '#type': webform_flexbox
+    name:
+      '#type': textfield
+      '#title': Name
+      '#required': true
+    email:
+      '#type': email
+      '#title': Email
+      '#required': true
+  flexbox_01:
+    '#type': webform_flexbox
+    event:
+      '#type': select
+      '#title': Event
+      '#options':
+        corporate: Corporate
+        wedding: Wedding
+        private_party: 'Private party'
+        festival: Festival
+    date:
+      '#type': date
+      '#title': Date
+  flexbox_02:
+    '#type': webform_flexbox
+    event_capacity:
+      '#type': number
+      '#title': 'Event capacity'
+      '#min': 1
+      '#max': 10000
+      '#step': 1
+    band_preference:
+      '#type': textfield
+      '#title': 'Band preference'
   message:
-    '#title': Message
     '#type': textarea
+    '#title': Message
+    '#placeholder': 'What do we need to know about your event?'
+  mailing_list:
+    '#type': checkbox
+    '#title': 'Mailing list'
+    '#description': '<p>I’d also like to join your mailing list – sign me up!</p>'
+    '#title_display': invisible
+    '#description_display': after
+  legal:
+    '#type': checkbox
+    '#title': Legal
+    '#description': '<p>I have read and understand the Privacy Policy and Terms of Service</p>'
+    '#title_display': invisible
+    '#description_display': after
     '#required': true
-    '#test': 'Please ignore this email.'
-  actions:
-    '#type': webform_actions
-    '#title': 'Submit button(s)'
-    '#submit__label': 'Send message'
 css: ''
 javascript: ''
 settings:
@@ -50,11 +72,11 @@ settings:
   ajax_progress_type: ''
   ajax_effect: ''
   ajax_speed: null
-  page: false
+  page: true
   page_submit_path: ''
   page_confirm_path: ''
   page_theme_name: ''
-  form_title: source_entity_webform
+  form_title: both
   form_submit_once: false
   form_open_message: ''
   form_close_message: ''
@@ -147,10 +169,10 @@ settings:
   draft_loaded_message: ''
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
-  confirmation_type: url_message
-  confirmation_url: '<front>'
+  confirmation_type: page
+  confirmation_url: ''
   confirmation_title: ''
-  confirmation_message: 'Your message has been sent.'
+  confirmation_message: ''
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -226,81 +248,5 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers:
-  email_confirmation:
-    id: email
-    handler_id: email_confirmation
-    label: 'Email confirmation'
-    notes: ''
-    status: true
-    conditions: {  }
-    weight: 1
-    settings:
-      states:
-        - completed
-      to_mail: '[current-user:mail]'
-      to_options: {  }
-      bcc_mail: ''
-      bcc_options: {  }
-      cc_mail: ''
-      cc_options: {  }
-      from_mail: _default
-      from_options: {  }
-      from_name: _default
-      reply_to: ''
-      return_path: ''
-      sender_mail: ''
-      sender_name: ''
-      subject: '[webform_submission:values:subject:raw]'
-      body: '[webform_submission:values:message:value]'
-      excluded_elements: {  }
-      ignore_access: false
-      exclude_empty: true
-      exclude_empty_checkbox: false
-      exclude_attachments: false
-      html: true
-      attachments: false
-      twig: false
-      theme_name: ''
-      langcode: ''
-      parameters: {  }
-      debug: false
-  email_notification:
-    id: email
-    handler_id: email_notification
-    label: 'Email notification'
-    notes: ''
-    status: true
-    conditions: {  }
-    weight: 2
-    settings:
-      states:
-        - completed
-      to_mail: _default
-      to_options: {  }
-      bcc_mail: ''
-      bcc_options: {  }
-      cc_mail: ''
-      cc_options: {  }
-      from_mail: '[webform_submission:values:email:raw]'
-      from_options: {  }
-      from_name: '[webform_submission:values:name:raw]'
-      reply_to: ''
-      return_path: ''
-      sender_mail: ''
-      sender_name: ''
-      subject: '[webform_submission:values:subject:raw]'
-      body: '[webform_submission:values:message:value]'
-      excluded_elements: {  }
-      ignore_access: false
-      exclude_empty: true
-      exclude_empty_checkbox: false
-      exclude_attachments: false
-      html: true
-      attachments: false
-      twig: false
-      theme_name: ''
-      langcode: ''
-      parameters: {  }
-      debug: false
+handlers: {  }
 variants: {  }

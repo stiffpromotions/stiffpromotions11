@@ -8,6 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.basic_band
     - paragraphs.paragraphs_type.basic_text
     - paragraphs.paragraphs_type.grey_text_block
+    - paragraphs.paragraphs_type.webform
   module:
     - entity_reference_revisions
 id: node.article.field_content
@@ -27,6 +28,7 @@ settings:
       basic_band: basic_band
       basic_text: basic_text
       grey_text_block: grey_text_block
+      webform: webform
     negate: 0
     target_bundles_drag_drop:
       basic_band:
@@ -43,5 +45,8 @@ settings:
         enabled: false
       grey_text_block:
         weight: 8
+        enabled: true
+      webform:
+        weight: 12
         enabled: true
 field_type: entity_reference_revisions
