@@ -1,0 +1,10 @@
+uuid: 4bf515c2-0fa1-4728-b20d-c6bb38143e7f
+langcode: en-gb
+status: true
+dependencies: {  }
+id: gallery
+label: Gallery
+icon_uuid: null
+icon_default: null
+description: 'Add a <em>gallery</em> carousel to the page.'
+behavior_plugins: {  }

@@ -192,3 +192,18 @@ body,
     max-width: inherit;
   }
 }
+
+
+.paragraph--type--gallery {
+  max-width: 1200px;
+  margin: 0 auto 90px auto;
+
+  @media (min-width: 1200px) and (max-width: 1599px) {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+  }
+}

@@ -15006,6 +15006,22 @@ a > .ck-content code {
     max-width: inherit;
   }
 }
+.ck-content .paragraph--type--gallery {
+  max-width: 1200px;
+  margin: 0 auto 90px auto;
+}
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .ck-content .paragraph--type--gallery {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .ck-content .paragraph--type--gallery {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+  }
+}
 .ck-content form label {
   font-family: "Alpha Medium", sans-serif;
   color: #000000;

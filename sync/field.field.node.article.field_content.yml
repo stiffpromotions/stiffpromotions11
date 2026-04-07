@@ -8,6 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.basic_band
     - paragraphs.paragraphs_type.basic_text
     - paragraphs.paragraphs_type.block
+    - paragraphs.paragraphs_type.gallery
     - paragraphs.paragraphs_type.grey_text_block
     - paragraphs.paragraphs_type.webform
   module:
@@ -31,6 +32,7 @@ settings:
       grey_text_block: grey_text_block
       webform: webform
       block: block
+      gallery: gallery
     negate: 0
     target_bundles_drag_drop:
       basic_band:
@@ -48,6 +50,9 @@ settings:
       front_page_columns:
         weight: -12
         enabled: false
+      gallery:
+        weight: 14
+        enabled: true
       grey_text_block:
         weight: -11
         enabled: true
