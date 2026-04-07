@@ -51,17 +51,29 @@ elements: |-
   flexbox_04:
     '#type': webform_flexbox
     bookings_last_year:
-      '#type': number
-      '#title': 'How many bookings did you have last year?'
-      '#min': 0
-      '#max': 365
-      '#step': 1
+      '#type': select
+      '#title': 'Number of shows last year?'
+      '#options':
+        '1_10': 1-10
+        '11_20': 11-20
+        '21_30': 21-30
+        '31_40': 31-40
+        '41_50': 41-50
+        '51_75': 51-75
+        75_plus: 75+
+      '#empty_option': 'Please select'
     bookings_this_year:
-      '#type': number
-      '#title': 'How many bookings do you have this year?'
-      '#min': 0
-      '#max': 365
-      '#step': 1
+      '#type': select
+      '#title': 'Number of bookings this year?'
+      '#options':
+        '1_10': 1-10
+        '11_20': 11-20
+        '21_30': 21-30
+        '31_40': 31-40
+        '41_50': 41-50
+        '51_75': 51-75
+        75_plus: 75+
+      '#empty_option': 'Please select'
   reason_for_representation:
     '#type': textarea
     '#title': 'Why do you want to be represented by Stiff Promotions?'

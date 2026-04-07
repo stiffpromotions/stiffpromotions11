@@ -1,0 +1,16 @@
+_core:
+  default_config_hash: 7Ml-sDtRf3JRL4NJLwt_twa-rdBi4hFnwPSd2vb1_JA
+langcode: en-gb
+api_key: ''
+domain: stiffpromotions.co.uk
+use_oauth: true
+api_timeout: 10
+cron: true
+batch_limit: 100
+api_classname: Mailchimp\Mailchimp
+test_mode: false
+enable_connected: true
+connected_id: null
+connected_paths: null
+webhook_hash: 8c471992202e4eec9d0828ca7ae43039
+optin_check_email_msg: 'Please check your email to confirm your subscription.'

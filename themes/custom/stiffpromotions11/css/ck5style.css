@@ -14992,6 +14992,20 @@ a > .ck-content code {
     margin: inherit;
   }
 }
+.ck-content .paragraph--type--block {
+  max-width: 500px;
+  margin: 0 auto 90px auto;
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .ck-content .paragraph--type--block {
+    max-width: 400px;
+  }
+}
+@media (max-width: 575px) {
+  .ck-content .paragraph--type--block {
+    max-width: inherit;
+  }
+}
 .ck-content form label {
   font-family: "Alpha Medium", sans-serif;
   color: #000000;

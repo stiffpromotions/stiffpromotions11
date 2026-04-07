@@ -178,3 +178,17 @@ body,
     }
   }
 }
+
+
+.paragraph--type--block {
+  max-width: 500px;
+  margin: 0 auto 90px auto;
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    max-width: 400px;
+  }
+
+  @media (max-width: 575px) {
+    max-width: inherit;
+  }
+}

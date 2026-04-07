@@ -1,0 +1,10 @@
+uuid: c0b32727-92ce-485d-b17f-225b1a23e661
+langcode: en-gb
+status: true
+dependencies: {  }
+id: block
+label: Block
+icon_uuid: null
+icon_default: null
+description: 'Use the <em>block</em> paragraph type to add a Mailchimp signup form.'
+behavior_plugins: {  }

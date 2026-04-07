@@ -7,6 +7,7 @@ dependencies:
     - node.type.article
     - paragraphs.paragraphs_type.basic_band
     - paragraphs.paragraphs_type.basic_text
+    - paragraphs.paragraphs_type.block
     - paragraphs.paragraphs_type.grey_text_block
     - paragraphs.paragraphs_type.webform
   module:
@@ -25,28 +26,32 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      basic_band: basic_band
       basic_text: basic_text
+      basic_band: basic_band
       grey_text_block: grey_text_block
       webform: webform
+      block: block
     negate: 0
     target_bundles_drag_drop:
       basic_band:
-        weight: 4
+        weight: -13
         enabled: true
       basic_text:
-        weight: 7
+        weight: -14
+        enabled: true
+      block:
+        weight: -9
         enabled: true
       front_page_block:
-        weight: 2
+        weight: -15
         enabled: false
       front_page_columns:
-        weight: 4
+        weight: -12
         enabled: false
       grey_text_block:
-        weight: 8
+        weight: -11
         enabled: true
       webform:
-        weight: 12
+        weight: -10
         enabled: true
 field_type: entity_reference_revisions
