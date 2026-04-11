@@ -16360,7 +16360,7 @@ body,
 
 .paragraph--type--gallery {
   max-width: 1200px;
-  margin: 0 auto 90px auto;
+  margin: 0 auto 0 auto;
 }
 @media (min-width: 1200px) and (max-width: 1599px) {
   .paragraph--type--gallery {
@@ -16373,6 +16373,18 @@ body,
     padding-left: 60px !important;
     padding-right: 60px !important;
   }
+}
+.paragraph--type--gallery .splide__slide {
+  padding: 0 15px;
+}
+.paragraph--type--gallery .splide__arrow--prev {
+  left: 2em;
+}
+.paragraph--type--gallery .splide__arrow--next {
+  right: 2em;
+}
+.paragraph--type--gallery img {
+  border-radius: 6px;
 }
 
 .page-node-type-logo .node__content {

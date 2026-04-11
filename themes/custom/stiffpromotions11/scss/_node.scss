@@ -197,7 +197,7 @@ body,
 
 .paragraph--type--gallery {
   max-width: 1200px;
-  margin: 0 auto 90px auto;
+  margin: 0 auto 0 auto;
 
   @media (min-width: 1200px) and (max-width: 1599px) {
     padding-left: 60px !important;
@@ -206,6 +206,21 @@ body,
   @media (min-width: 992px) and (max-width: 1199px) {
     padding-left: 60px !important;
     padding-right: 60px !important;
+  }
+
+  .splide__slide {
+    padding: 0 15px;
+  }
+
+  .splide__arrow--prev {
+    left: 2em;
+  }
+  .splide__arrow--next {
+    right: 2em;
+  }
+
+  img {
+    border-radius: $border-radius-img;
   }
 }
 

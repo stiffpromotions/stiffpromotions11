@@ -14944,7 +14944,7 @@ a > .ck-content code {
 }
 .ck-content .paragraph--type--gallery {
   max-width: 1200px;
-  margin: 0 auto 90px auto;
+  margin: 0 auto 0 auto;
 }
 @media (min-width: 1200px) and (max-width: 1599px) {
   .ck-content .paragraph--type--gallery {
@@ -14957,6 +14957,18 @@ a > .ck-content code {
     padding-left: 60px !important;
     padding-right: 60px !important;
   }
+}
+.ck-content .paragraph--type--gallery .splide__slide {
+  padding: 0 15px;
+}
+.ck-content .paragraph--type--gallery .splide__arrow--prev {
+  left: 2em;
+}
+.ck-content .paragraph--type--gallery .splide__arrow--next {
+  right: 2em;
+}
+.ck-content .paragraph--type--gallery img {
+  border-radius: 6px;
 }
 .ck-content .page-node-type-logo .node__content {
   text-align: center;

@@ -42,7 +42,7 @@ options:
     easing: 'cubic-bezier(.42,.65,.27,.99)'
     arrows: 'true'
     arrowPath: ''
-    pagination: 'true'
+    pagination: 'false'
     paginationDirection: ltr
     paginationKeyboard: true
     omitEnd: false
