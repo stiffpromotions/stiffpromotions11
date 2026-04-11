@@ -1,3 +1,7 @@
-main p a {
+main a {
   font-weight: $font-weight-bold;
+}
+
+main .contextual a {
+  font-weight: inherit;
 }

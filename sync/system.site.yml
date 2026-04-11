@@ -6,8 +6,8 @@ name: 'Stiff Promotions'
 mail: noreply@stiffpromotions.co.uk
 slogan: ''
 page:
-  403: /node/1
-  404: /node/1
+  403: /node/11
+  404: /node/10
   front: /node/1
 admin_compact_mode: false
 weight_select_max: 100

@@ -43,6 +43,7 @@ footer {
   ul.nav {
     font-family: $headings-font-family;
     text-transform: uppercase;
+    color: $gray;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -62,6 +63,10 @@ footer {
     li .nav-link {
       margin: 0;
       padding: 0;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   }
 }

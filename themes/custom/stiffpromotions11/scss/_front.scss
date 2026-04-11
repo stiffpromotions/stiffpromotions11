@@ -10,6 +10,7 @@
       bottom: 20px;
       left: 60px;
       font-size: 120px;
+      text-transform: uppercase;
 
       @media (min-width: 1200px) and (max-width: 1599px) {bottom: 20px; left: 50px; font-size: 100px;}
       @media (min-width:  992px) and (max-width: 1199px) {bottom: 10px; left: 40px; font-size:  80px;}
@@ -29,7 +30,7 @@
       }
 
       .page-title-first-part {
-        font-family: "Alpha Outline", sans-serif;
+        font-family: "Alpha Inline", sans-serif;
         font-weight: 100;
         color: $white;
 
@@ -71,9 +72,10 @@
       flex: 0 0 50%;
       width: 100%;
       padding: 30px 0 30px 30px;
+      margin-bottom: 0;
 
       @media (min-width: 768px) and (max-width: 991px)  {padding: 15px 0 15px 15px;}
-      @media (max-width: 767px)                         {padding: 0 0 15px 0;}
+      @media (max-width: 767px)                         {padding: 0 0 15px 0; margin-bottom: 24px;}
 
 
       img {
@@ -87,6 +89,14 @@
     .text-wrapper {
       flex: 1 1 auto;
       padding: 30px 30px 30px 0;
+
+      h2 {
+        margin-bottom: 24px;
+      }
+
+      .text {
+        margin-bottom: 48px;
+      }
 
       @media (min-width: 768px) and (max-width: 991px) {
         padding: 15px 15px 15px 0;
@@ -123,7 +133,7 @@
   .paragraph--type--front-page-columns {
     margin-top: 90px;
     margin-bottom: 90px;
-    background-color: $gray-200;
+    background-color: #f7f7f6;
     padding: 90px 30px;
 
     .container {

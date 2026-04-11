@@ -1,7 +1,12 @@
 uuid: 66f7a892-0da7-474d-a6b8-25f8ee32d305
 langcode: en-gb
 status: open
-dependencies: {  }
+dependencies:
+  module:
+    - honeypot
+third_party_settings:
+  honeypot:
+    honeypot: true
 weight: 0
 open: null
 close: null
@@ -80,7 +85,7 @@ elements: |-
   legal:
     '#type': checkbox
     '#title': Legal
-    '#description': '<p>I accept the Terms &amp; Conditions and Privacy and Cookie Policies</p>'
+    '#description': '<p>I have read and understand the <a href="/privacy-policy" target="_blank">Privacy</a> and <a href="/cookie-policy" target="_blank">Cookie</a> Policies</p>'
     '#title_display': invisible
     '#description_display': after
     '#required': true
@@ -189,8 +194,8 @@ settings:
   draft_loaded_message: ''
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
-  confirmation_type: page
-  confirmation_url: ''
+  confirmation_type: url
+  confirmation_url: /thank-you
   confirmation_title: ''
   confirmation_message: ''
   confirmation_attributes: {  }
@@ -268,5 +273,43 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  email_notification_to_stiff_promotions:
+    id: email
+    handler_id: email_notification_to_stiff_promotions
+    label: 'Email notification to Stiff Promotions'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: iain@stiffpromotions.co.uk
+      to_options: {  }
+      bcc_mail: info@alimartin.com
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: noreply@stiffpromotions.co.uk
+      from_options: {  }
+      from_name: '* Stiff Promotions website *'
+      reply_to: noreply@stiffpromotions.co.uk
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: '* Artist submission from Stiff Promotions website *'
+      body: _default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      langcode: ''
+      parameters: {  }
+      debug: false
 variants: {  }

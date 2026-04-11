@@ -4,6 +4,7 @@ body,
   background-color: $white;
   color: $gray;
   font-optical-sizing: auto;
+  letter-spacing: -0.5%;
 }
 
 
@@ -13,7 +14,7 @@ body,
     justify-content: center !important;
 
     a {
-      font-weight: $font-weight-bold;
+      font-weight: inherit;
     }
   }
 }
@@ -32,7 +33,7 @@ body,
 /* General pages use the built-in Article content type */
 .page-node-type-article {
   .header-wrapper {
-    background-color: $gray-200;
+    background-color: #f7f7f6;
     padding: 60px 0;
     margin-bottom: 60px;
 
@@ -60,9 +61,9 @@ body,
     }
 
     h1 {
-      font-family: "Alpha Outline", sans-serif;
-      // font-size: 96px;
+      font-family: "Alpha Inline", sans-serif;
       font-size: clamp(48px, calc(36px + 4vw), 96px);
+      text-transform: uppercase;
     }
   }
 }
@@ -70,7 +71,7 @@ body,
 
 .paragraph--type--basic-band,
 .paragraph--type--basic-text {
-  max-width: 1000px;
+  max-width: 974px;
   margin: 0 auto 60px auto;
 
   @media (min-width: 768px) and (max-width: 1199px) {
@@ -140,7 +141,7 @@ body,
   }
 
   .text-wrapper {
-    background-color: $gray-200;
+    background-color: #f7f7f6;
     max-width: inherit;
     padding-top: 60px !important;
     padding-bottom: 60px !important;
