@@ -16375,6 +16375,10 @@ body,
   }
 }
 
+.page-node-type-logo .node__content {
+  text-align: center;
+}
+
 form label {
   font-family: "Alpha Medium", sans-serif;
   color: #000000;
@@ -16429,7 +16433,6 @@ form .required-text .asterisk {
 }
 .page-node-type-front .hero-wrapper {
   position: relative;
-  margin-bottom: 60px;
 }
 .page-node-type-front .hero-wrapper h1, .page-node-type-front .hero-wrapper .h1 {
   position: absolute;
@@ -16494,6 +16497,28 @@ form .required-text .asterisk {
   font-family: "Alpha Medium", sans-serif;
   font-weight: 100;
   color: #FFDE06;
+}
+.page-node-type-front .logos {
+  background-color: #f7f7f6;
+  padding: 30px 10px;
+  margin-bottom: 60px;
+}
+.page-node-type-front .logos .view-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 80px;
+}
+.page-node-type-front .logos .views-row {
+  flex-shrink: 0;
+}
+.page-node-type-front .logos img.img-fluid {
+  max-width: none;
+  margin: 0 20px;
 }
 .page-node-type-front {
   /* Front page blocks with image and text */

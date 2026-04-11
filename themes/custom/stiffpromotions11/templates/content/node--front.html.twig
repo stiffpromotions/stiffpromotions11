@@ -83,7 +83,13 @@
       <span class="page-title-first-part">{{ node.field_page_title_first_part.value }}</span>
       <span class="page-title-second-part">{{ node.field_page_title_second_part.value }}</span>
     </h1>
+    
   </div>
+
+  <div class="logos fluid-limit">
+    {{ drupal_block('views_block:logo_strip-block_1') }}
+  </div>
+
 
   <div class="content">
     {{ content.field_content }}

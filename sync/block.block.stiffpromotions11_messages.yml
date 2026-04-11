@@ -11,7 +11,7 @@ _core:
 id: stiffpromotions11_messages
 theme: stiffpromotions11
 region: content
-weight: -7
+weight: -5
 provider: null
 plugin: system_messages_block
 settings:

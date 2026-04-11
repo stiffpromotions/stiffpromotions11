@@ -3,7 +3,6 @@
   /* Hero */
   .hero-wrapper {
     position: relative;
-    margin-bottom: 60px;
 
     h1 {
       position: absolute;
@@ -49,6 +48,34 @@
         font-weight: 100;
         color: $yellow;
       }
+    }
+
+  }
+
+  .logos {
+    background-color: #f7f7f6;
+    padding: 30px 10px;
+    margin-bottom: 60px;
+
+    .view-content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      // gap: 45px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      height: 80px;
+    }
+
+    .views-row {
+      flex-shrink: 0;
+    }
+
+    img.img-fluid {
+      max-width: none;
+      margin: 0 20px;
     }
   }
 

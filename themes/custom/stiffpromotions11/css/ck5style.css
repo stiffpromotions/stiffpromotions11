@@ -14958,6 +14958,9 @@ a > .ck-content code {
     padding-right: 60px !important;
   }
 }
+.ck-content .page-node-type-logo .node__content {
+  text-align: center;
+}
 .ck-content form label {
   font-family: "Alpha Medium", sans-serif;
   color: #000000;
@@ -15010,7 +15013,6 @@ a > .ck-content code {
 }
 .ck-content .page-node-type-front .hero-wrapper {
   position: relative;
-  margin-bottom: 60px;
 }
 .ck-content .page-node-type-front .hero-wrapper h1, .ck-content .page-node-type-front .hero-wrapper .h1 {
   position: absolute;
@@ -15075,6 +15077,28 @@ a > .ck-content code {
   font-family: "Alpha Medium", sans-serif;
   font-weight: 100;
   color: #FFDE06;
+}
+.ck-content .page-node-type-front .logos {
+  background-color: #f7f7f6;
+  padding: 30px 10px;
+  margin-bottom: 60px;
+}
+.ck-content .page-node-type-front .logos .view-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 80px;
+}
+.ck-content .page-node-type-front .logos .views-row {
+  flex-shrink: 0;
+}
+.ck-content .page-node-type-front .logos img.img-fluid {
+  max-width: none;
+  margin: 0 20px;
 }
 .ck-content .page-node-type-front {
   /* Front page blocks with image and text */
