@@ -15095,6 +15095,10 @@ a > .ck-content code {
 }
 .ck-content .page-node-type-front .logos .views-row {
   flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
 }
 .ck-content .page-node-type-front .logos img.img-fluid {
   max-width: none;

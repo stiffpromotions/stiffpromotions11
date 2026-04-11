@@ -16515,6 +16515,10 @@ form .required-text .asterisk {
 }
 .page-node-type-front .logos .views-row {
   flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
 }
 .page-node-type-front .logos img.img-fluid {
   max-width: none;
