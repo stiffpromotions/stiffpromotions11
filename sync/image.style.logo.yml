@@ -1,7 +1,9 @@
 uuid: 91f5c81c-3ec4-46bd-9f91-6fb9a363cc44
 langcode: en-gb
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - image_effects
 name: logo
 label: Logo
 effects:
@@ -18,3 +20,9 @@ effects:
     id: image_desaturate
     weight: -9
     data: {  }
+  c0e871a1-58bf-43ac-941d-e8227580a638:
+    uuid: c0e871a1-58bf-43ac-941d-e8227580a638
+    id: image_effects_color_shift
+    weight: -10
+    data:
+      RGB: '#444444'
