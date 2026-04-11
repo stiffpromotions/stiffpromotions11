@@ -15205,6 +15205,10 @@ a > .ck-content code {
 .ck-content #block-stiffpromotions11-main-navigation ul.navbar-nav li a:hover {
   color: #0D285B;
 }
+.ck-content #block-stiffpromotions11-main-navigation ul.navbar-nav li a.btn:hover, .ck-content #block-stiffpromotions11-main-navigation ul.navbar-nav li a.button:hover, .ck-content #block-stiffpromotions11-main-navigation ul.navbar-nav li .node-preview-container a.node-preview-backlink:hover, .ck-content .node-preview-container #block-stiffpromotions11-main-navigation ul.navbar-nav li a.node-preview-backlink:hover {
+  background-color: #0D285B;
+  color: #ffffff;
+}
 .ck-content .navbar-toggler {
   border: none;
   padding: 0;

@@ -16624,6 +16624,10 @@ nav.navbar {
 #block-stiffpromotions11-main-navigation ul.navbar-nav li a:hover {
   color: #0D285B;
 }
+#block-stiffpromotions11-main-navigation ul.navbar-nav li a.btn:hover, #block-stiffpromotions11-main-navigation ul.navbar-nav li a.button:hover, #block-stiffpromotions11-main-navigation ul.navbar-nav li .node-preview-container a.node-preview-backlink:hover, .node-preview-container #block-stiffpromotions11-main-navigation ul.navbar-nav li a.node-preview-backlink:hover {
+  background-color: #0D285B;
+  color: #ffffff;
+}
 
 .navbar-toggler {
   border: none;

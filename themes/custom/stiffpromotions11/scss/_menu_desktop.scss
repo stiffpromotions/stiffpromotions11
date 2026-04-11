@@ -32,6 +32,11 @@ nav.navbar {
       a:hover {
         color: #0D285B;
       }
+
+      a.btn:hover {
+        background-color: #0D285B;
+        color: $white;
+      }
     }
   }
 }
