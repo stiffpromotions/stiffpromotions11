@@ -15964,6 +15964,7 @@ main .contextual a {
   padding: 12px 16px;
   border-radius: 6px;
   transition: background-color 0.2s ease;
+  outline: none;
 }
 .btn:hover, button.link:hover, .button:hover, .node-preview-container .node-preview-backlink:hover {
   background-color: #0D285B;
@@ -16387,9 +16388,35 @@ form .form-control,
 form .form-select {
   border-radius: 6px;
 }
+form .form-control:focus,
+form .form-select:focus {
+  border-color: #0D285B;
+  box-shadow: inherit;
+}
 form .webform-element-description {
   position: relative;
   top: 2px;
+}
+form {
+  /* Checkbox background colour */
+}
+form input.form-check-input:checked {
+  background-color: #0F1F3D;
+  border-color: #0F1F3D;
+  accent-color: #0F1F3D;
+}
+form .form-actions {
+  margin-bottom: 30px;
+}
+form .required-text {
+  font-family: "Alpha Medium", sans-serif;
+  font-size: 15px;
+  letter-spacing: 5%;
+}
+form .required-text .asterisk {
+  font-size: 18px;
+  color: #D13434;
+  margin-right: 5px;
 }
 
 .form-item-message,
@@ -16645,6 +16672,85 @@ nav.navbar {
 
 .navbar-toggler.collapsed .navbar-toggler-icon {
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23000000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+#klaro #klaro-cookie-notice,
+#klaro .cm-modal {
+  border: 3px solid #0F1F3D;
+  border-radius: 10px;
+  box-shadow: inherit;
+  outline: inherit;
+}
+#klaro #klaro-cookie-notice a.cn-learn-more,
+#klaro .cm-modal a.cn-learn-more {
+  text-decoration: underline;
+}
+#klaro #klaro-cookie-notice .cn-buttons button,
+#klaro .cm-modal .cn-buttons button {
+  width: inherit;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+  background-color: #0F1F3D;
+  color: #ffffff;
+  outline: none;
+}
+#klaro #klaro-cookie-notice .cn-buttons button:hover,
+#klaro .cm-modal .cn-buttons button:hover {
+  background-color: #0D285B;
+  color: #ffffff;
+}
+#klaro #klaro-cookie-notice .cn-ok a,
+#klaro .cm-modal .cn-ok a {
+  color: #0F1F3D;
+  font-weight: 700;
+  text-decoration: none;
+}
+#klaro #klaro-cookie-notice .cn-ok a:hover,
+#klaro .cm-modal .cn-ok a:hover {
+  text-decoration: underline;
+}
+#klaro h1, #klaro .h1 {
+  font-family: "Alpha Medium", sans-serif;
+}
+#klaro .slider {
+  background-color: #0F1F3D;
+}
+#klaro .cookie-modal .cm-list-description,
+#klaro .context-notice .cm-list-description,
+#klaro .cookie-notice .cm-list-description {
+  font-size: 0.85em;
+  padding: 0;
+}
+#klaro .label.cm-list-label {
+  min-height: 20px;
+}
+#klaro button {
+  width: inherit;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+  background-color: #0F1F3D;
+  color: #ffffff;
+  outline: none;
+}
+#klaro button:hover {
+  background-color: #0D285B;
+  color: #ffffff;
+}
+#klaro button.hide {
+  background-color: #000000;
+  border-radius: 50%;
+  outline: inherit;
+}
+#klaro button.hide svg {
+  stroke: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */

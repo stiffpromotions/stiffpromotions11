@@ -1,0 +1,88 @@
+#klaro {
+  #klaro-cookie-notice,
+  .cm-modal {
+    border: 3px solid $blue;
+    border-radius: $border-radius;
+    box-shadow: inherit;
+    outline: inherit;
+
+    a.cn-learn-more {
+      text-decoration: underline;
+    }
+
+    .cn-buttons button {
+      width: inherit;
+      font-family: $font-family-sans-serif;
+      font-weight: $font-weight-bold;
+      font-size: 14px;
+      line-height: 1;
+      letter-spacing: 3%;
+      text-transform: uppercase;
+      background-color: $blue;
+      color: $white;
+      outline: none;
+
+      &:hover {
+        background-color: #0D285B;
+        color: $white;
+      }
+    }
+
+    .cn-ok a {
+      color: $blue;
+      font-weight: $font-weight-bold;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  h1 {
+    font-family: "Alpha Medium", sans-serif;
+  }
+
+  .slider {
+    background-color: $blue;
+  }
+
+  .cookie-modal .cm-list-description,
+  .context-notice .cm-list-description,
+  .cookie-notice .cm-list-description {
+    font-size: 0.85em;
+    padding: 0;
+  }
+
+  .label.cm-list-label {
+    min-height: 20px;
+  }
+
+  button {
+    width: inherit;
+    font-family: $font-family-sans-serif;
+    font-weight: $font-weight-bold;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 3%;
+    text-transform: uppercase;
+    background-color: $blue;
+    color: $white;
+    outline: none;
+
+    &:hover {
+      background-color: #0D285B;
+      color: $white;
+    }
+  }
+
+  button.hide {
+    background-color: $black;
+    border-radius: 50%;
+    outline: inherit;
+
+    svg {
+      stroke: $white;
+    }
+  }
+}

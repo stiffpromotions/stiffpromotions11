@@ -13,11 +13,39 @@ form {
   .form-control,
   .form-select {
     border-radius: $border-radius-img;
+
+    &:focus {
+      border-color: #0D285B;
+      box-shadow: inherit;
+    }
   }
   
   .webform-element-description {
     position: relative;
     top: 2px;
+  }
+
+  /* Checkbox background colour */
+  input.form-check-input:checked {
+    background-color: $blue;
+    border-color: $blue;
+    accent-color: $blue;
+  }
+
+  .form-actions {
+    margin-bottom: 30px;
+  }
+
+  .required-text {
+    font-family: $headings-font-family;
+    font-size: 15px;
+    letter-spacing: 5%;
+
+    .asterisk {
+      font-size: 18px;
+      color: $red;
+      margin-right: 5px;
+    }
   }
 
 }
@@ -26,3 +54,4 @@ form {
 .form-item-legal {
   margin-bottom: 45px;
 }
+

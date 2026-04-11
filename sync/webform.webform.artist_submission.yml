@@ -24,16 +24,19 @@ elements: |-
       '#type': textfield
       '#title': 'Artist / band name'
       '#required': true
+      '#required_error': 'This field is required'
     contact_name:
       '#type': textfield
       '#title': 'Contact name'
       '#required': true
+      '#required_error': 'This field is required'
   flexbox_01:
     '#type': webform_flexbox
     email:
       '#type': email
       '#title': Email
       '#required': true
+      '#required_error': 'This field is required'
     phone:
       '#type': tel
       '#title': Phone
@@ -89,6 +92,12 @@ elements: |-
     '#title_display': invisible
     '#description_display': after
     '#required': true
+    '#required_error': 'This field is required'
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#submit__label': Submit
+    '#suffix': '<div class="required-text"><span class="asterisk">*</span>Required</div>'
 css: ''
 javascript: ''
 settings:

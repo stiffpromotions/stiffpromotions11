@@ -1,6 +1,6 @@
 uuid: 434c6c5b-d63e-4438-a7ee-2f3d000f8cc9
 langcode: en-gb
-status: false
+status: true
 dependencies: {  }
 _core:
   default_config_hash: iNRJWR9llujUKVo3_0Pb8lFXSXUeSj2y2bg6xK3X-DQ
@@ -14,8 +14,8 @@ cookies: {  }
 required: false
 opt_out: false
 only_once: false
-contextual_consent_only: null
-contextual_consent_text: null
+contextual_consent_only: false
+contextual_consent_text: ''
 info_url: 'https://about.instagram.com/'
 privacy_policy_url: 'https://privacycenter.instagram.com/policy'
 javascripts:
