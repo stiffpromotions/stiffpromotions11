@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/acaddcfs/new.stiffpromotions.co.uk
+    - export DEPLOYPATH=/home/acaddcfs/stiffpromotions.co.uk
     - /bin/cp -r * $DEPLOYPATH
