@@ -1,8 +1,8 @@
-uuid: a7276e8a-7335-4af5-9ff2-76fa9d76914f
+uuid: 1b7d993a-33b7-4db8-a712-b84a5d91101f
 langcode: en-gb
 status: true
 dependencies: {  }
 id: 587Gd36uqaMz-n5LFU5O2Dq3ziqP6tq2cuWdL_7baIA
-label: 'https://stiffpromotions11.ddev.site'
+label: Sitemap
 context:
   language: en-gb
