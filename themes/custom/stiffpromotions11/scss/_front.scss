@@ -123,6 +123,7 @@
 
       h2 {
         margin-bottom: 24px;
+        text-transform: uppercase;
       }
 
       .text {
@@ -175,6 +176,7 @@
       h2 {
         padding-top: 30px;
         border-top: 1px solid $gray-300;
+        text-transform: uppercase;
       }
 
       @media (max-width: 991px) {

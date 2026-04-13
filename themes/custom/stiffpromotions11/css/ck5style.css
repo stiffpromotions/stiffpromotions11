@@ -14843,6 +14843,7 @@ a > .ck-content code {
 .ck-content .paragraph--type--basic-text .h2 {
   font-size: 48px;
   margin-bottom: 30px;
+  text-transform: uppercase;
 }
 @media (max-width: 767px) {
   .ck-content .paragraph--type--basic-band h2, .ck-content .paragraph--type--basic-band .h2,
@@ -14904,6 +14905,7 @@ a > .ck-content code {
 .ck-content .paragraph--type--grey-text-block h2, .ck-content .paragraph--type--grey-text-block .h2,
 .ck-content .paragraph--type--grey-text-block .text {
   margin-bottom: 15px;
+  text-transform: uppercase;
 }
 .ck-content .paragraph--type--webform {
   max-width: 800px;
@@ -15163,6 +15165,7 @@ a > .ck-content code {
 }
 .ck-content .page-node-type-front .field__item .paragraph--type--front-page-block .text-wrapper h2, .ck-content .page-node-type-front .field__item .paragraph--type--front-page-block .text-wrapper .h2 {
   margin-bottom: 24px;
+  text-transform: uppercase;
 }
 .ck-content .page-node-type-front .field__item .paragraph--type--front-page-block .text-wrapper .text {
   margin-bottom: 48px;
@@ -15231,6 +15234,7 @@ a > .ck-content code {
 .ck-content .page-node-type-front .paragraph--type--front-page-columns .container h2, .ck-content .page-node-type-front .paragraph--type--front-page-columns .container .h2 {
   padding-top: 30px;
   border-top: 1px solid #b9b9b9;
+  text-transform: uppercase;
 }
 @media (max-width: 991px) {
   .ck-content .page-node-type-front .paragraph--type--front-page-columns .container {

@@ -16255,6 +16255,7 @@ body,
 .paragraph--type--basic-text .h2 {
   font-size: 48px;
   margin-bottom: 30px;
+  text-transform: uppercase;
 }
 @media (max-width: 767px) {
   .paragraph--type--basic-band h2, .paragraph--type--basic-band .h2,
@@ -16317,6 +16318,7 @@ body,
 .paragraph--type--grey-text-block h2, .paragraph--type--grey-text-block .h2,
 .paragraph--type--grey-text-block .text {
   margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
 .paragraph--type--webform {
@@ -16583,6 +16585,7 @@ form .required-text .asterisk {
 }
 .page-node-type-front .field__item .paragraph--type--front-page-block .text-wrapper h2, .page-node-type-front .field__item .paragraph--type--front-page-block .text-wrapper .h2 {
   margin-bottom: 24px;
+  text-transform: uppercase;
 }
 .page-node-type-front .field__item .paragraph--type--front-page-block .text-wrapper .text {
   margin-bottom: 48px;
@@ -16651,6 +16654,7 @@ form .required-text .asterisk {
 .page-node-type-front .paragraph--type--front-page-columns .container h2, .page-node-type-front .paragraph--type--front-page-columns .container .h2 {
   padding-top: 30px;
   border-top: 1px solid #b9b9b9;
+  text-transform: uppercase;
 }
 @media (max-width: 991px) {
   .page-node-type-front .paragraph--type--front-page-columns .container {
