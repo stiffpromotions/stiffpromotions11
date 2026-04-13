@@ -14902,10 +14902,12 @@ a > .ck-content code {
     padding-bottom: 45px !important;
   }
 }
-.ck-content .paragraph--type--grey-text-block h2, .ck-content .paragraph--type--grey-text-block .h2,
-.ck-content .paragraph--type--grey-text-block .text {
+.ck-content .paragraph--type--grey-text-block h2, .ck-content .paragraph--type--grey-text-block .h2 {
   margin-bottom: 15px;
   text-transform: uppercase;
+}
+.ck-content .paragraph--type--grey-text-block .text {
+  margin-bottom: 15px;
 }
 .ck-content .paragraph--type--webform {
   max-width: 800px;
@@ -14977,6 +14979,7 @@ a > .ck-content code {
 }
 .ck-content form label {
   font-family: "Alpha Medium", sans-serif;
+  text-transform: uppercase;
   color: #000000;
   font-size: 28px;
   margin-bottom: 8px;
@@ -15010,6 +15013,7 @@ a > .ck-content code {
 }
 .ck-content form .required-text {
   font-family: "Alpha Medium", sans-serif;
+  text-transform: uppercase;
   font-size: 15px;
   letter-spacing: 5%;
 }

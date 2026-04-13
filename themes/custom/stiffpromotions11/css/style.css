@@ -16315,10 +16315,12 @@ body,
     padding-bottom: 45px !important;
   }
 }
-.paragraph--type--grey-text-block h2, .paragraph--type--grey-text-block .h2,
-.paragraph--type--grey-text-block .text {
+.paragraph--type--grey-text-block h2, .paragraph--type--grey-text-block .h2 {
   margin-bottom: 15px;
   text-transform: uppercase;
+}
+.paragraph--type--grey-text-block .text {
+  margin-bottom: 15px;
 }
 
 .paragraph--type--webform {
@@ -16395,6 +16397,7 @@ body,
 
 form label {
   font-family: "Alpha Medium", sans-serif;
+  text-transform: uppercase;
   color: #000000;
   font-size: 28px;
   margin-bottom: 8px;
@@ -16428,6 +16431,7 @@ form .form-actions {
 }
 form .required-text {
   font-family: "Alpha Medium", sans-serif;
+  text-transform: uppercase;
   font-size: 15px;
   letter-spacing: 5%;
 }
