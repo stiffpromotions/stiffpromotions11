@@ -1,0 +1,7 @@
+uuid: bf06c715-ba70-48d5-b8d5-bd84202417d8
+langcode: en-gb
+status: true
+dependencies: {  }
+formId: webform_submission_artist_submission_form
+captchaType: recaptcha_v3/deny
+label: webform_submission_artist_submission_form

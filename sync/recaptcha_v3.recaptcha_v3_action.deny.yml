@@ -1,0 +1,8 @@
+uuid: cf61b0be-fa69-4ae0-9153-c19631aacc9f
+langcode: en-gb
+status: true
+dependencies: {  }
+id: deny
+label: Deny
+threshold: 0.5
+challenge: default
