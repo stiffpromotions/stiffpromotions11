@@ -5,12 +5,14 @@ dependencies:
   config:
     - field.field.node.front.field_content
     - field.field.node.front.field_hero
+    - field.field.node.front.field_meta_tags
     - field.field.node.front.field_page_title_first_part
     - field.field.node.front.field_page_title_second_part
     - image.style.thumbnail
     - node.type.front
   module:
     - image_widget_crop
+    - metatag
     - paragraphs
     - path
 id: node.front.default
@@ -26,7 +28,7 @@ content:
     third_party_settings: {  }
   field_content:
     type: paragraphs
-    weight: 10
+    weight: 9
     region: content
     settings:
       title: Paragraph
@@ -60,9 +62,17 @@ content:
       show_crop_area: false
       show_default_crop: true
     third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 10
+    region: content
+    settings:
+      sidebar: false
+      use_details: true
+    third_party_settings: {  }
   field_page_title_first_part:
     type: string_textfield
-    weight: 8
+    weight: 7
     region: content
     settings:
       size: 60
@@ -70,7 +80,7 @@ content:
     third_party_settings: {  }
   field_page_title_second_part:
     type: string_textfield
-    weight: 9
+    weight: 8
     region: content
     settings:
       size: 60

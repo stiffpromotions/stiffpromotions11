@@ -14760,6 +14760,10 @@ a > .ck-content code {
   margin-left: auto;
   margin-right: auto;
 }
+.ck-content .path-user main > .container-fluid, .ck-content .path-user main > .container-sm, .ck-content .path-user main > .container-md, .ck-content .path-user main > .container-lg, .ck-content .path-user main > .container-xl, .ck-content .path-user main > .container-xxl {
+  max-width: 850px;
+  margin: 0 auto !important;
+}
 .ck-content {
   /* General pages use the built-in Article content type */
 }

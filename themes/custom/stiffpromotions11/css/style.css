@@ -16173,6 +16173,11 @@ body,
   margin-right: auto;
 }
 
+.path-user main > .container-fluid, .path-user main > .container-sm, .path-user main > .container-md, .path-user main > .container-lg, .path-user main > .container-xl, .path-user main > .container-xxl {
+  max-width: 850px;
+  margin: 0 auto !important;
+}
+
 /* General pages use the built-in Article content type */
 .page-node-type-article .header-wrapper {
   background-color: #f7f7f6;

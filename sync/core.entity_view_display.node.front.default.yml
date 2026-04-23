@@ -5,12 +5,14 @@ dependencies:
   config:
     - field.field.node.front.field_content
     - field.field.node.front.field_hero
+    - field.field.node.front.field_meta_tags
     - field.field.node.front.field_page_title_first_part
     - field.field.node.front.field_page_title_second_part
     - node.type.front
     - responsive_image.styles.hero
   module:
     - entity_reference_revisions
+    - metatag
     - responsive_image
     - user
 id: node.front.default
@@ -37,6 +39,13 @@ content:
         attribute: lazy
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
     region: content
   field_page_title_first_part:
     type: string

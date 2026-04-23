@@ -30,6 +30,15 @@ body,
 }
 
 
+.path-user {
+  main > .container-fluid {
+    max-width: 850px;
+    margin: 0 auto !important;
+  }
+}
+
+
+
 /* General pages use the built-in Article content type */
 .page-node-type-article {
   .header-wrapper {
